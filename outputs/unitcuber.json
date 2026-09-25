@@ -1,0 +1,366 @@
+{
+    "type": "CityJSON",
+    "version": "1.0",
+    "CityObjects": {
+        "3504ff0c96c1aff62aa7ec0df4644c3a04915436": {
+            "geometry": [
+                {
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    0,
+                                    1,
+                                    2,
+                                    3
+                                ]
+                            ],
+                            [
+                                [
+                                    4,
+                                    5,
+                                    1,
+                                    0
+                                ]
+                            ],
+                            [
+                                [
+                                    5,
+                                    6,
+                                    2,
+                                    1
+                                ]
+                            ],
+                            [
+                                [
+                                    6,
+                                    7,
+                                    3,
+                                    2
+                                ]
+                            ],
+                            [
+                                [
+                                    7,
+                                    4,
+                                    0,
+                                    3
+                                ]
+                            ],
+                            [
+                                [
+                                    7,
+                                    6,
+                                    5,
+                                    4
+                                ]
+                            ]
+                        ]
+                    ],
+                    "lod": "1",
+                    "type": "Solid"
+                }
+            ],
+            "attributes": {
+                "function": "something"
+            },
+            "type": "GenericCityObject"
+        },
+        "9ce32f3f0e42a5aa2c7fc46ac9ce2ac407f1a11a": {
+            "geometry": [
+                {
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    0,
+                                    1,
+                                    2,
+                                    3
+                                ]
+                            ],
+                            [
+                                [
+                                    4,
+                                    5,
+                                    1,
+                                    0
+                                ]
+                            ],
+                            [
+                                [
+                                    5,
+                                    6,
+                                    2,
+                                    1
+                                ]
+                            ],
+                            [
+                                [
+                                    6,
+                                    7,
+                                    3,
+                                    2
+                                ]
+                            ],
+                            [
+                                [
+                                    7,
+                                    4,
+                                    0,
+                                    3
+                                ]
+                            ],
+                            [
+                                [
+                                    7,
+                                    6,
+                                    5,
+                                    4
+                                ]
+                            ],
+                            [
+                                [
+                                    0,
+                                    1,
+                                    8
+                                ]
+                            ],
+                            [
+                                [
+                                    1,
+                                    2,
+                                    8
+                                ]
+                            ],
+                            [
+                                [
+                                    2,
+                                    3,
+                                    8
+                                ]
+                            ],
+                            [
+                                [
+                                    3,
+                                    0,
+                                    8
+                                ]
+                            ]
+                        ]
+                    ],
+                    "lod": "1",
+                    "type": "Solid"
+                }
+            ],
+            "attributes": {
+                "function": "something"
+            },
+            "type": "GenericCityObject"
+        },
+        "611c5eac4d475b4633f54bfbdaf14f0778e1f83a": {
+            "geometry": [
+                {
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    9,
+                                    10,
+                                    11,
+                                    12
+                                ]
+                            ]
+                        ]
+                    ],
+                    "lod": "1",
+                    "type": "Solid"
+                }
+            ],
+            "attributes": {
+                "function": "something"
+            },
+            "type": "GenericCityObject"
+        },
+        "948695070adbb88f153ce74cb1d60eef96b6d7e4": {
+            "geometry": [
+                {
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    9,
+                                    11,
+                                    12,
+                                    10
+                                ]
+                            ]
+                        ]
+                    ],
+                    "lod": "1",
+                    "type": "Solid"
+                }
+            ],
+            "attributes": {
+                "function": "something"
+            },
+            "type": "GenericCityObject"
+        },
+        "c91cc66c4741fae7b1ec644a0145ecd36b973b0c": {
+            "geometry": [
+                {
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    9,
+                                    11,
+                                    12,
+                                    10
+                                ]
+                            ]
+                        ]
+                    ],
+                    "lod": "1",
+                    "type": "Solid"
+                }
+            ],
+            "attributes": {
+                "function": "something different"
+            },
+            "type": "GenericCityObject"
+        }
+    },
+    "versioning": {
+        "versions": {
+            "54e1da1a32b8989e388b59e83a98d1147b86e11e": {
+                "objects": {
+                    "id-1": "3504ff0c96c1aff62aa7ec0df4644c3a04915436"
+                },
+                "author": "Mark",
+                "date": "2026-09-15T14:57:12.027722Z",
+                "message": "Nieuwe cube test"
+            },
+            "4144af107129e0cbf03d5259d9f221bc440a245e": {
+                "objects": {
+                    "id-2": "9ce32f3f0e42a5aa2c7fc46ac9ce2ac407f1a11a"
+                },
+                "author": "Mark",
+                "date": "2026-09-15T14:57:48.831265Z",
+                "message": "2de cube",
+                "parents": [
+                    "54e1da1a32b8989e388b59e83a98d1147b86e11e"
+                ]
+            },
+            "a59a078156413c685d09c021d7c9f00d99852998": {
+                "objects": {
+                    "id-1": "3504ff0c96c1aff62aa7ec0df4644c3a04915436",
+                    "id-2": "611c5eac4d475b4633f54bfbdaf14f0778e1f83a"
+                },
+                "author": "Mark",
+                "date": "2026-09-15T15:06:44.963351Z",
+                "message": "Plane test",
+                "parents": [
+                    "4144af107129e0cbf03d5259d9f221bc440a245e"
+                ]
+            },
+            "afeb39621368d9bad91d2039373889272ddc52f7": {
+                "objects": {
+                    "id-1": "3504ff0c96c1aff62aa7ec0df4644c3a04915436",
+                    "id-2": "948695070adbb88f153ce74cb1d60eef96b6d7e4"
+                },
+                "author": "Mark",
+                "date": "2026-09-15T15:09:31.156361Z",
+                "message": "Plane test",
+                "parents": [
+                    "a59a078156413c685d09c021d7c9f00d99852998"
+                ]
+            },
+            "60dd57377cb796d450a01aed7c294ac73e4028e1": {
+                "objects": {
+                    "id-1": "3504ff0c96c1aff62aa7ec0df4644c3a04915436",
+                    "id-2": "c91cc66c4741fae7b1ec644a0145ecd36b973b0c"
+                },
+                "author": "Mark",
+                "date": "2026-09-16T09:11:48.638871Z",
+                "message": "Testing different attribute",
+                "parents": [
+                    "afeb39621368d9bad91d2039373889272ddc52f7"
+                ]
+            }
+        },
+        "tags": {},
+        "branches": {
+            "main": "60dd57377cb796d450a01aed7c294ac73e4028e1"
+        }
+    },
+    "vertices": [
+        [
+            0,
+            0,
+            1000
+        ],
+        [
+            1000,
+            0,
+            1000
+        ],
+        [
+            1000,
+            1000,
+            1000
+        ],
+        [
+            0,
+            1000,
+            1000
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            1000,
+            0,
+            0
+        ],
+        [
+            1000,
+            1000,
+            0
+        ],
+        [
+            0,
+            1000,
+            0
+        ],
+        [
+            500,
+            500,
+            1250
+        ],
+        [
+            500,
+            500,
+            0
+        ],
+        [
+            500,
+            500,
+            1500
+        ],
+        [
+            1500,
+            500,
+            0
+        ],
+        [
+            1500,
+            500,
+            1500
+        ]
+    ],
+    "appearance": {},
+    "geometry-templates": {}
+}

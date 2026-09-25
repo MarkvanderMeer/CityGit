@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: cjv
+Version: 0.1
+License-File: LICENSE.md
+Requires-Dist: Click
+Requires-Dist: colorama
+Requires-Dist: networkx
+Requires-Dist: deepdiff
+Requires-Dist: rich
+Dynamic: license-file
+Dynamic: requires-dist
