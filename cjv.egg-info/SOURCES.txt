@@ -10,4 +10,3 @@ cjv.egg-info/requires.txt
 cjv.egg-info/top_level.txt
 tests/test_citymodel.py
 tests/test_commands.py
-tests/test_versioning.py

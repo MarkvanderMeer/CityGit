@@ -1,0 +1,197 @@
+{
+    "type": "CityJSON",
+    "version": "1.0",
+    "CityObjects": {
+        "3504ff0c96c1aff62aa7ec0df4644c3a04915436": {
+            "geometry": [
+                {
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    0,
+                                    1,
+                                    2,
+                                    3
+                                ]
+                            ],
+                            [
+                                [
+                                    4,
+                                    5,
+                                    1,
+                                    0
+                                ]
+                            ],
+                            [
+                                [
+                                    5,
+                                    6,
+                                    2,
+                                    1
+                                ]
+                            ],
+                            [
+                                [
+                                    6,
+                                    7,
+                                    3,
+                                    2
+                                ]
+                            ],
+                            [
+                                [
+                                    7,
+                                    4,
+                                    0,
+                                    3
+                                ]
+                            ],
+                            [
+                                [
+                                    7,
+                                    6,
+                                    5,
+                                    4
+                                ]
+                            ]
+                        ]
+                    ],
+                    "lod": "1",
+                    "type": "Solid"
+                }
+            ],
+            "attributes": {
+                "function": "something"
+            },
+            "type": "GenericCityObject"
+        },
+        "63d57602bd0c897f2185ac7367418dc1a3b4eeb0": {
+            "geometry": [
+                {
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    8,
+                                    10,
+                                    11,
+                                    9
+                                ]
+                            ]
+                        ]
+                    ],
+                    "lod": "1",
+                    "type": "Solid"
+                }
+            ],
+            "attributes": {
+                "function": "something different"
+            },
+            "type": "GenericCityObject"
+        }
+    },
+    "versioning": {
+        "versions": {
+            "1f7ad0e758375d342b5f897dab4a39a979d9101e": {
+                "objects": {
+                    "id-1": "3504ff0c96c1aff62aa7ec0df4644c3a04915436"
+                },
+                "author": "Mark",
+                "date": "2026-09-28T10:22:15.934784Z",
+                "message": "check test file"
+            },
+            "99b37dbc17ff8417cccca697c01d1cb9905e00f7": {
+                "objects": {
+                    "id-1": "3504ff0c96c1aff62aa7ec0df4644c3a04915436",
+                    "id-2": "63d57602bd0c897f2185ac7367418dc1a3b4eeb0"
+                },
+                "author": "Mark",
+                "date": "2026-09-28T10:54:12.309637Z",
+                "message": " check change",
+                "parents": [
+                    "1f7ad0e758375d342b5f897dab4a39a979d9101e"
+                ]
+            },
+            "29fdb2f2f2798aae09b11efcebf335453f42edda": {
+                "objects": {
+                    "id-1": "3504ff0c96c1aff62aa7ec0df4644c3a04915436"
+                },
+                "author": "Mark",
+                "date": "2026-09-28T12:09:14.504081Z",
+                "message": "go back to single cube",
+                "parents": [
+                    "99b37dbc17ff8417cccca697c01d1cb9905e00f7"
+                ]
+            }
+        },
+        "tags": {},
+        "branches": {
+            "main": "29fdb2f2f2798aae09b11efcebf335453f42edda"
+        }
+    },
+    "vertices": [
+        [
+            0,
+            0,
+            1000
+        ],
+        [
+            1000,
+            0,
+            1000
+        ],
+        [
+            1000,
+            1000,
+            1000
+        ],
+        [
+            0,
+            1000,
+            1000
+        ],
+        [
+            0,
+            0,
+            0
+        ],
+        [
+            1000,
+            0,
+            0
+        ],
+        [
+            1000,
+            1000,
+            0
+        ],
+        [
+            0,
+            1000,
+            0
+        ],
+        [
+            500,
+            500,
+            0
+        ],
+        [
+            500,
+            500,
+            1500
+        ],
+        [
+            1500,
+            500,
+            0
+        ],
+        [
+            1500,
+            500,
+            1500
+        ]
+    ],
+    "appearance": {},
+    "geometry-templates": {}
+}
