@@ -1,2 +1,0 @@
-# CityGit
-MSc Thesis: CityGit
