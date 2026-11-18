@@ -1,0 +1,4986 @@
+{
+    "type": "CityJSON",
+    "version": "1.0",
+    "CityObjects": {
+        "916b415306f30a28b1e2dd19b5a3941f5a77c44b": {
+            "type": "Building",
+            "geographicalExtent": [
+                194619.94900016784,
+                405938.10199890134,
+                14.532999992370604,
+                194624.22300033568,
+                405944.10099945066,
+                17.839323043823242
+            ],
+            "attributes": {
+                "b3_dak_type": "slanted",
+                "b3_extrusie": "standard",
+                "b3_h_dak_50p": 17.698999404907227,
+                "b3_h_dak_70p": 17.81599998474121,
+                "b3_h_dak_max": 17.913999557495117,
+                "b3_h_dak_min": 17.617000579833984,
+                "b3_h_maaiveld": 14.532999992370604,
+                "b3_is_glas_dak": false,
+                "b3_kas_warenhuis": false,
+                "b3_mutatie_ahn3_ahn4": false,
+                "b3_mutatie_ahn4_ahn5": false,
+                "b3_n_nok": 0,
+                "b3_n_vlakken": 2,
+                "b3_nodata_fractie_ahn3": 0,
+                "b3_nodata_fractie_ahn4": 0,
+                "b3_nodata_fractie_ahn5": 0,
+                "b3_nodata_radius_ahn3": 0,
+                "b3_nodata_radius_ahn4": 0,
+                "b3_nodata_radius_ahn5": 0,
+                "b3_puntdichtheid_ahn3": 14.692307472229004,
+                "b3_puntdichtheid_ahn4": 14.615385055541992,
+                "b3_puntdichtheid_ahn5": 17.384614944458008,
+                "b3_pw_bron": "ahn5",
+                "b3_pw_datum": 2024,
+                "b3_pw_onvoldoende": false,
+                "b3_pw_selectie_reden": "PREFERRED_AND_LATEST",
+                "b3_rmse_lod12": 0.13374757766723633,
+                "b3_rmse_lod13": 0.13374757766723633,
+                "b3_rmse_lod22": 0.1387592256069183,
+                "b3_t_run": 14,
+                "b3_val3dity_lod12": "[]",
+                "b3_val3dity_lod13": "[]",
+                "b3_val3dity_lod22": "[]",
+                "b3_volume_lod12": 40.884002685546875,
+                "b3_volume_lod13": 40.884002685546875,
+                "b3_volume_lod22": 40.03578186035156,
+                "begingeldigheid": "2010-02-23",
+                "documentdatum": "2010-02-23",
+                "documentnummer": "FZ 14861/02",
+                "fid": 14756228,
+                "geconstateerd": false,
+                "identificatie": "NL.IMBAG.Pand.0756100000020606",
+                "oorspronkelijkbouwjaar": 1993,
+                "status": "Pand in gebruik",
+                "tijdstipregistratie": "2010-05-12T15:36:58Z",
+                "tijdstipregistratielv": "2010-05-12T16:00:40Z",
+                "voorkomenidentificatie": 1,
+                "b3_opp_grond": 12.53,
+                "b3_opp_dak_plat": 12.53,
+                "b3_opp_dak_schuin": 0,
+                "b3_opp_scheidingsmuur": 0,
+                "b3_opp_buitenmuur": 48.37
+            },
+            "geometry": [
+                {
+                    "type": "MultiSurface",
+                    "lod": "0",
+                    "boundaries": [
+                        [
+                            [
+                                54,
+                                55,
+                                56,
+                                57
+                            ]
+                        ]
+                    ]
+                }
+            ],
+            "children": [
+                "NL.IMBAG.Pand.0756100000020606-0"
+            ]
+        },
+        "b4f2efa670a78472082d7f87bf67449a936fc311": {
+            "type": "Building",
+            "geographicalExtent": [
+                194636.96999816893,
+                405933.67199859617,
+                14.69200038909912,
+                194649.27999954225,
+                405954.0499969482,
+                23.3414249420166
+            ],
+            "attributes": {
+                "b3_dak_type": "slanted",
+                "b3_extrusie": "standard",
+                "b3_h_dak_50p": 19.864999771118164,
+                "b3_h_dak_70p": 21.111000061035156,
+                "b3_h_dak_max": 23.232999801635746,
+                "b3_h_dak_min": 17.489999771118164,
+                "b3_h_maaiveld": 14.69200038909912,
+                "b3_h_nok": 23.340961456298828,
+                "b3_is_glas_dak": false,
+                "b3_kas_warenhuis": false,
+                "b3_mutatie_ahn3_ahn4": false,
+                "b3_mutatie_ahn4_ahn5": false,
+                "b3_n_nok": 3,
+                "b3_n_vlakken": 6,
+                "b3_nodata_fractie_ahn3": 0.19778481125831604,
+                "b3_nodata_fractie_ahn4": 0.004746835213154554,
+                "b3_nodata_fractie_ahn5": 0,
+                "b3_nodata_radius_ahn3": 0,
+                "b3_nodata_radius_ahn4": 0,
+                "b3_nodata_radius_ahn5": 0,
+                "b3_puntdichtheid_ahn3": 11.029585838317873,
+                "b3_puntdichtheid_ahn4": 15.122416496276855,
+                "b3_puntdichtheid_ahn5": 17.462024688720703,
+                "b3_pw_bron": "ahn5",
+                "b3_pw_datum": 2024,
+                "b3_pw_onvoldoende": false,
+                "b3_pw_selectie_reden": "PREFERRED_AND_LATEST",
+                "b3_rmse_lod12": 1.913230299949646,
+                "b3_rmse_lod13": 1.913230299949646,
+                "b3_rmse_lod22": 0.1504315733909607,
+                "b3_t_run": 114,
+                "b3_val3dity_lod12": "[]",
+                "b3_val3dity_lod13": "[]",
+                "b3_val3dity_lod22": "[]",
+                "b3_volume_lod12": 1006.9427490234376,
+                "b3_volume_lod13": 1006.9427490234376,
+                "b3_volume_lod22": 854.906982421875,
+                "begingeldigheid": "1993-11-22",
+                "documentdatum": "1993-11-22",
+                "documentnummer": "BVBOX/1942-1997/1319",
+                "fid": 14559613,
+                "geconstateerd": false,
+                "identificatie": "NL.IMBAG.Pand.0756100000003827",
+                "oorspronkelijkbouwjaar": 1993,
+                "status": "Pand in gebruik",
+                "tijdstipregistratie": "2010-05-12T15:04:58Z",
+                "tijdstipregistratielv": "2010-05-12T15:30:32Z",
+                "voorkomenidentificatie": 1,
+                "b3_opp_grond": 158.1,
+                "b3_opp_dak_plat": 3.8,
+                "b3_opp_dak_schuin": 227.78,
+                "b3_opp_scheidingsmuur": 0,
+                "b3_opp_buitenmuur": 274.84,
+                "b3_bouwlagen": 3
+            },
+            "geometry": [
+                {
+                    "type": "MultiSurface",
+                    "lod": "0",
+                    "boundaries": [
+                        [
+                            [
+                                70,
+                                71,
+                                72,
+                                73,
+                                74,
+                                75,
+                                76,
+                                77,
+                                78,
+                                79
+                            ]
+                        ]
+                    ]
+                }
+            ],
+            "children": [
+                "NL.IMBAG.Pand.0756100000003827-0"
+            ]
+        },
+        "e52223855de1116eb9260ae447e3a1082ee5dbca": {
+            "type": "BuildingPart",
+            "geometry": [
+                {
+                    "type": "Solid",
+                    "lod": "1.2",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    10,
+                                    11,
+                                    12,
+                                    13,
+                                    14,
+                                    15,
+                                    16,
+                                    17,
+                                    18,
+                                    19
+                                ]
+                            ],
+                            [
+                                [
+                                    20,
+                                    16,
+                                    15,
+                                    21
+                                ]
+                            ],
+                            [
+                                [
+                                    21,
+                                    15,
+                                    14,
+                                    22
+                                ]
+                            ],
+                            [
+                                [
+                                    23,
+                                    17,
+                                    16,
+                                    20
+                                ]
+                            ],
+                            [
+                                [
+                                    24,
+                                    13,
+                                    12,
+                                    25
+                                ]
+                            ],
+                            [
+                                [
+                                    22,
+                                    14,
+                                    13,
+                                    24
+                                ]
+                            ],
+                            [
+                                [
+                                    26,
+                                    11,
+                                    10,
+                                    27
+                                ]
+                            ],
+                            [
+                                [
+                                    25,
+                                    12,
+                                    11,
+                                    26
+                                ]
+                            ],
+                            [
+                                [
+                                    27,
+                                    10,
+                                    19,
+                                    28
+                                ]
+                            ],
+                            [
+                                [
+                                    28,
+                                    19,
+                                    18,
+                                    29
+                                ]
+                            ],
+                            [
+                                [
+                                    29,
+                                    18,
+                                    17,
+                                    23
+                                ]
+                            ],
+                            [
+                                [
+                                    29,
+                                    23,
+                                    20,
+                                    21,
+                                    22,
+                                    24,
+                                    25,
+                                    26,
+                                    27,
+                                    28
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_70p": 21.954456329345703,
+                                "b3_h_dak_min": 18.200138092041016,
+                                "b3_h_dak_max": 23.492551803588867,
+                                "b3_h_dak_50p": 21.04972267150879
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                3
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Solid",
+                    "lod": "1.3",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    10,
+                                    11,
+                                    12,
+                                    13,
+                                    14,
+                                    15,
+                                    16,
+                                    17,
+                                    18,
+                                    19
+                                ]
+                            ],
+                            [
+                                [
+                                    20,
+                                    16,
+                                    15,
+                                    21
+                                ]
+                            ],
+                            [
+                                [
+                                    21,
+                                    15,
+                                    14,
+                                    22
+                                ]
+                            ],
+                            [
+                                [
+                                    23,
+                                    17,
+                                    16,
+                                    20
+                                ]
+                            ],
+                            [
+                                [
+                                    24,
+                                    13,
+                                    12,
+                                    25
+                                ]
+                            ],
+                            [
+                                [
+                                    22,
+                                    14,
+                                    13,
+                                    24
+                                ]
+                            ],
+                            [
+                                [
+                                    26,
+                                    11,
+                                    10,
+                                    27
+                                ]
+                            ],
+                            [
+                                [
+                                    25,
+                                    12,
+                                    11,
+                                    26
+                                ]
+                            ],
+                            [
+                                [
+                                    27,
+                                    10,
+                                    19,
+                                    28
+                                ]
+                            ],
+                            [
+                                [
+                                    28,
+                                    19,
+                                    18,
+                                    29
+                                ]
+                            ],
+                            [
+                                [
+                                    29,
+                                    18,
+                                    17,
+                                    23
+                                ]
+                            ],
+                            [
+                                [
+                                    29,
+                                    23,
+                                    20,
+                                    21,
+                                    22,
+                                    24,
+                                    25,
+                                    26,
+                                    27,
+                                    28
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_70p": 21.954456329345703,
+                                "b3_h_dak_max": 23.492551803588867,
+                                "b3_h_dak_50p": 21.04972267150879,
+                                "b3_h_dak_min": 18.200138092041016
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                3
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Solid",
+                    "lod": "2.2",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    12,
+                                    13,
+                                    14,
+                                    15,
+                                    16,
+                                    30,
+                                    17,
+                                    18,
+                                    31,
+                                    19,
+                                    32,
+                                    10,
+                                    33,
+                                    11
+                                ]
+                            ],
+                            [
+                                [
+                                    34,
+                                    15,
+                                    14,
+                                    35
+                                ]
+                            ],
+                            [
+                                [
+                                    36,
+                                    16,
+                                    15,
+                                    34
+                                ]
+                            ],
+                            [
+                                [
+                                    37,
+                                    13,
+                                    12,
+                                    38
+                                ]
+                            ],
+                            [
+                                [
+                                    35,
+                                    14,
+                                    13,
+                                    37
+                                ]
+                            ],
+                            [
+                                [
+                                    39,
+                                    33,
+                                    10,
+                                    40
+                                ]
+                            ],
+                            [
+                                [
+                                    41,
+                                    11,
+                                    33,
+                                    39
+                                ]
+                            ],
+                            [
+                                [
+                                    38,
+                                    12,
+                                    11,
+                                    41
+                                ]
+                            ],
+                            [
+                                [
+                                    42,
+                                    19,
+                                    31,
+                                    43
+                                ]
+                            ],
+                            [
+                                [
+                                    44,
+                                    18,
+                                    17,
+                                    45
+                                ]
+                            ],
+                            [
+                                [
+                                    43,
+                                    31,
+                                    18,
+                                    44
+                                ]
+                            ],
+                            [
+                                [
+                                    46,
+                                    47,
+                                    32,
+                                    19,
+                                    42
+                                ]
+                            ],
+                            [
+                                [
+                                    45,
+                                    17,
+                                    30,
+                                    48
+                                ]
+                            ],
+                            [
+                                [
+                                    48,
+                                    30,
+                                    16,
+                                    36
+                                ]
+                            ],
+                            [
+                                [
+                                    40,
+                                    10,
+                                    32,
+                                    47
+                                ]
+                            ],
+                            [
+                                [
+                                    49,
+                                    50,
+                                    47,
+                                    46
+                                ]
+                            ],
+                            [
+                                [
+                                    51,
+                                    52,
+                                    53
+                                ]
+                            ],
+                            [
+                                [
+                                    52,
+                                    51,
+                                    50,
+                                    49
+                                ]
+                            ],
+                            [
+                                [
+                                    48,
+                                    36,
+                                    34,
+                                    35,
+                                    37,
+                                    38,
+                                    41,
+                                    39
+                                ]
+                            ],
+                            [
+                                [
+                                    52,
+                                    49,
+                                    46,
+                                    42,
+                                    43,
+                                    53
+                                ]
+                            ],
+                            [
+                                [
+                                    50,
+                                    51,
+                                    53,
+                                    43,
+                                    44,
+                                    45,
+                                    48,
+                                    39,
+                                    40,
+                                    47
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_azimut": 161.53424072265625,
+                                "b3_h_dak_max": 23.492551803588867,
+                                "b3_h_dak_70p": 22.225341796875,
+                                "b3_h_dak_min": 18.96645164489746,
+                                "b3_h_dak_50p": 21.40976905822754,
+                                "b3_hellingshoek": 29.778356552124023
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_max": 20.71272087097168,
+                                "b3_h_dak_min": 19.70880699157715,
+                                "b3_h_dak_50p": 20.27406883239746,
+                                "b3_azimut": 154.37709045410156,
+                                "b3_hellingshoek": 32.617576599121094,
+                                "b3_h_dak_70p": 20.42420768737793
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_50p": 20.854673385620117,
+                                "b3_azimut": 341.4136047363281,
+                                "b3_h_dak_70p": 21.77596092224121,
+                                "b3_h_dak_min": 18.200138092041016,
+                                "b3_h_dak_max": 23.492551803588867,
+                                "b3_hellingshoek": 30.097087860107425
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                2,
+                                2,
+                                2,
+                                3,
+                                4,
+                                5
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "parents": [
+                "NL.IMBAG.Pand.0756100000001889"
+            ]
+        },
+        "8d86060d149f9197e6ee5957c28280aa85fdaefe": {
+            "type": "Building",
+            "geographicalExtent": [
+                194600.17055778505,
+                405943.5300003051,
+                14.559000015258787,
+                194621.52999954225,
+                405957.7233215332,
+                23.79087829589844
+            ],
+            "attributes": {
+                "b3_dak_type": "slanted",
+                "b3_extrusie": "standard",
+                "b3_h_dak_50p": 19.8700008392334,
+                "b3_h_dak_70p": 20.732999801635746,
+                "b3_h_dak_max": 23.218000411987305,
+                "b3_h_dak_min": 17.64699935913086,
+                "b3_h_maaiveld": 14.559000015258787,
+                "b3_h_nok": 23.711322784423828,
+                "b3_is_glas_dak": false,
+                "b3_kas_warenhuis": false,
+                "b3_mutatie_ahn3_ahn4": false,
+                "b3_mutatie_ahn4_ahn5": false,
+                "b3_n_nok": 1,
+                "b3_n_vlakken": 9,
+                "b3_nodata_fractie_ahn3": 0.002797202905640006,
+                "b3_nodata_fractie_ahn4": 0,
+                "b3_nodata_fractie_ahn5": 0,
+                "b3_nodata_radius_ahn3": 0,
+                "b3_nodata_radius_ahn4": 0,
+                "b3_nodata_radius_ahn5": 0,
+                "b3_puntdichtheid_ahn3": 14.94530200958252,
+                "b3_puntdichtheid_ahn4": 15.440559387207031,
+                "b3_puntdichtheid_ahn5": 18.327272415161133,
+                "b3_pw_bron": "ahn5",
+                "b3_pw_datum": 2024,
+                "b3_pw_onvoldoende": false,
+                "b3_pw_selectie_reden": "PREFERRED_AND_LATEST",
+                "b3_rmse_lod12": 2.1113061904907227,
+                "b3_rmse_lod13": 0.8652761578559875,
+                "b3_rmse_lod22": 0.26799482107162476,
+                "b3_t_run": 149,
+                "b3_val3dity_lod12": "[]",
+                "b3_val3dity_lod13": "[]",
+                "b3_val3dity_lod22": "[]",
+                "b3_volume_lod12": 1102.242919921875,
+                "b3_volume_lod13": 954.5667724609376,
+                "b3_volume_lod22": 891.6093139648438,
+                "begingeldigheid": "1993-04-22",
+                "documentdatum": "1993-04-22",
+                "documentnummer": "BVBOX/1942-1997/1482",
+                "fid": 14556577,
+                "geconstateerd": false,
+                "identificatie": "NL.IMBAG.Pand.0756100000002523",
+                "oorspronkelijkbouwjaar": 1993,
+                "status": "Pand in gebruik",
+                "tijdstipregistratie": "2010-05-12T15:02:01Z",
+                "tijdstipregistratielv": "2010-05-12T15:30:25Z",
+                "voorkomenidentificatie": 1,
+                "b3_opp_grond": 179.42,
+                "b3_opp_dak_plat": 85.9,
+                "b3_opp_dak_schuin": 129.31,
+                "b3_opp_scheidingsmuur": 0,
+                "b3_opp_buitenmuur": 274.12,
+                "b3_bouwlagen": 2
+            },
+            "geometry": [
+                {
+                    "type": "MultiSurface",
+                    "lod": "0",
+                    "boundaries": [
+                        [
+                            [
+                                136,
+                                137,
+                                138,
+                                139,
+                                140,
+                                141,
+                                142,
+                                143,
+                                144,
+                                145,
+                                146,
+                                147,
+                                148,
+                                149,
+                                150,
+                                151
+                            ]
+                        ]
+                    ]
+                }
+            ],
+            "children": [
+                "NL.IMBAG.Pand.0756100000002523-0"
+            ]
+        },
+        "885e25b4c3e6cbb64a26d576458c689d5dd292e9": {
+            "type": "BuildingPart",
+            "geometry": [
+                {
+                    "type": "Solid",
+                    "lod": "1.2",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    58,
+                                    59,
+                                    60,
+                                    61
+                                ]
+                            ],
+                            [
+                                [
+                                    62,
+                                    58,
+                                    61,
+                                    63
+                                ]
+                            ],
+                            [
+                                [
+                                    63,
+                                    61,
+                                    60,
+                                    64
+                                ]
+                            ],
+                            [
+                                [
+                                    64,
+                                    60,
+                                    59,
+                                    65
+                                ]
+                            ],
+                            [
+                                [
+                                    65,
+                                    59,
+                                    58,
+                                    62
+                                ]
+                            ],
+                            [
+                                [
+                                    65,
+                                    62,
+                                    63,
+                                    64
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_70p": 17.762981414794922,
+                                "b3_h_dak_min": 17.65843391418457,
+                                "b3_h_dak_50p": 17.739383697509766,
+                                "b3_h_dak_max": 17.83055305480957
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                3
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Solid",
+                    "lod": "1.3",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    58,
+                                    59,
+                                    60,
+                                    61
+                                ]
+                            ],
+                            [
+                                [
+                                    62,
+                                    58,
+                                    61,
+                                    63
+                                ]
+                            ],
+                            [
+                                [
+                                    63,
+                                    61,
+                                    60,
+                                    64
+                                ]
+                            ],
+                            [
+                                [
+                                    64,
+                                    60,
+                                    59,
+                                    65
+                                ]
+                            ],
+                            [
+                                [
+                                    65,
+                                    59,
+                                    58,
+                                    62
+                                ]
+                            ],
+                            [
+                                [
+                                    65,
+                                    62,
+                                    63,
+                                    64
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_50p": 17.739383697509766,
+                                "b3_h_dak_70p": 17.762981414794922,
+                                "b3_h_dak_max": 17.83055305480957,
+                                "b3_h_dak_min": 17.65843391418457
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                3
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Solid",
+                    "lod": "2.2",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    58,
+                                    59,
+                                    60,
+                                    61
+                                ]
+                            ],
+                            [
+                                [
+                                    66,
+                                    58,
+                                    61,
+                                    67
+                                ]
+                            ],
+                            [
+                                [
+                                    67,
+                                    61,
+                                    60,
+                                    68
+                                ]
+                            ],
+                            [
+                                [
+                                    68,
+                                    60,
+                                    59,
+                                    69
+                                ]
+                            ],
+                            [
+                                [
+                                    69,
+                                    59,
+                                    58,
+                                    66
+                                ]
+                            ],
+                            [
+                                [
+                                    69,
+                                    66,
+                                    67,
+                                    68
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_70p": 17.762981414794922,
+                                "b3_h_dak_max": 17.83055305480957,
+                                "b3_azimut": 184.24310302734375,
+                                "b3_hellingshoek": 1.9769469499588013,
+                                "b3_h_dak_min": 17.65843391418457,
+                                "b3_h_dak_50p": 17.739383697509766
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                3
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "parents": [
+                "NL.IMBAG.Pand.0756100000020606"
+            ]
+        },
+        "2ed9da99474d8147666ecfa2a2d7c3dc30da2a26": {
+            "type": "BuildingPart",
+            "geometry": [
+                {
+                    "type": "Solid",
+                    "lod": "1.2",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    80,
+                                    81,
+                                    82,
+                                    83,
+                                    84,
+                                    85,
+                                    86,
+                                    87,
+                                    88,
+                                    89
+                                ]
+                            ],
+                            [
+                                [
+                                    90,
+                                    81,
+                                    80,
+                                    91
+                                ]
+                            ],
+                            [
+                                [
+                                    91,
+                                    80,
+                                    89,
+                                    92
+                                ]
+                            ],
+                            [
+                                [
+                                    93,
+                                    82,
+                                    81,
+                                    90
+                                ]
+                            ],
+                            [
+                                [
+                                    94,
+                                    83,
+                                    82,
+                                    93
+                                ]
+                            ],
+                            [
+                                [
+                                    95,
+                                    85,
+                                    84,
+                                    96
+                                ]
+                            ],
+                            [
+                                [
+                                    92,
+                                    89,
+                                    88,
+                                    97
+                                ]
+                            ],
+                            [
+                                [
+                                    97,
+                                    88,
+                                    87,
+                                    98
+                                ]
+                            ],
+                            [
+                                [
+                                    98,
+                                    87,
+                                    86,
+                                    99
+                                ]
+                            ],
+                            [
+                                [
+                                    96,
+                                    84,
+                                    83,
+                                    94
+                                ]
+                            ],
+                            [
+                                [
+                                    99,
+                                    86,
+                                    85,
+                                    95
+                                ]
+                            ],
+                            [
+                                [
+                                    99,
+                                    95,
+                                    96,
+                                    94,
+                                    93,
+                                    90,
+                                    91,
+                                    92,
+                                    97,
+                                    98
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_50p": 19.90266990661621,
+                                "b3_h_dak_max": 23.60285758972168,
+                                "b3_h_dak_min": 17.099716186523438,
+                                "b3_h_dak_70p": 21.008691787719727
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                3
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Solid",
+                    "lod": "1.3",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    80,
+                                    81,
+                                    82,
+                                    83,
+                                    84,
+                                    85,
+                                    86,
+                                    87,
+                                    88,
+                                    89
+                                ]
+                            ],
+                            [
+                                [
+                                    90,
+                                    81,
+                                    80,
+                                    91
+                                ]
+                            ],
+                            [
+                                [
+                                    91,
+                                    80,
+                                    89,
+                                    92
+                                ]
+                            ],
+                            [
+                                [
+                                    93,
+                                    82,
+                                    81,
+                                    90
+                                ]
+                            ],
+                            [
+                                [
+                                    94,
+                                    83,
+                                    82,
+                                    93
+                                ]
+                            ],
+                            [
+                                [
+                                    95,
+                                    85,
+                                    84,
+                                    96
+                                ]
+                            ],
+                            [
+                                [
+                                    92,
+                                    89,
+                                    88,
+                                    97
+                                ]
+                            ],
+                            [
+                                [
+                                    97,
+                                    88,
+                                    87,
+                                    98
+                                ]
+                            ],
+                            [
+                                [
+                                    98,
+                                    87,
+                                    86,
+                                    99
+                                ]
+                            ],
+                            [
+                                [
+                                    96,
+                                    84,
+                                    83,
+                                    94
+                                ]
+                            ],
+                            [
+                                [
+                                    99,
+                                    86,
+                                    85,
+                                    95
+                                ]
+                            ],
+                            [
+                                [
+                                    99,
+                                    95,
+                                    96,
+                                    94,
+                                    93,
+                                    90,
+                                    91,
+                                    92,
+                                    97,
+                                    98
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_min": 17.099716186523438,
+                                "b3_h_dak_50p": 19.90266990661621,
+                                "b3_h_dak_max": 23.60285758972168,
+                                "b3_h_dak_70p": 21.008691787719727
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                3
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Solid",
+                    "lod": "2.2",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    100,
+                                    80,
+                                    81,
+                                    101,
+                                    82,
+                                    83,
+                                    102,
+                                    103,
+                                    84,
+                                    85,
+                                    104,
+                                    86,
+                                    87,
+                                    105,
+                                    106,
+                                    88,
+                                    107,
+                                    89
+                                ]
+                            ],
+                            [
+                                [
+                                    108,
+                                    109,
+                                    110,
+                                    111
+                                ]
+                            ],
+                            [
+                                [
+                                    112,
+                                    101,
+                                    81,
+                                    113
+                                ]
+                            ],
+                            [
+                                [
+                                    114,
+                                    82,
+                                    101,
+                                    112
+                                ]
+                            ],
+                            [
+                                [
+                                    115,
+                                    116,
+                                    117
+                                ]
+                            ],
+                            [
+                                [
+                                    113,
+                                    81,
+                                    80,
+                                    118
+                                ]
+                            ],
+                            [
+                                [
+                                    116,
+                                    115,
+                                    109,
+                                    108
+                                ]
+                            ],
+                            [
+                                [
+                                    119,
+                                    106,
+                                    105,
+                                    120
+                                ]
+                            ],
+                            [
+                                [
+                                    121,
+                                    104,
+                                    85,
+                                    122
+                                ]
+                            ],
+                            [
+                                [
+                                    120,
+                                    105,
+                                    87,
+                                    123
+                                ]
+                            ],
+                            [
+                                [
+                                    123,
+                                    87,
+                                    86,
+                                    124
+                                ]
+                            ],
+                            [
+                                [
+                                    124,
+                                    86,
+                                    104,
+                                    121
+                                ]
+                            ],
+                            [
+                                [
+                                    125,
+                                    83,
+                                    82,
+                                    114
+                                ]
+                            ],
+                            [
+                                [
+                                    126,
+                                    102,
+                                    83,
+                                    125
+                                ]
+                            ],
+                            [
+                                [
+                                    122,
+                                    85,
+                                    84,
+                                    127
+                                ]
+                            ],
+                            [
+                                [
+                                    128,
+                                    103,
+                                    102,
+                                    126
+                                ]
+                            ],
+                            [
+                                [
+                                    129,
+                                    88,
+                                    106,
+                                    119
+                                ]
+                            ],
+                            [
+                                [
+                                    127,
+                                    84,
+                                    103,
+                                    128
+                                ]
+                            ],
+                            [
+                                [
+                                    130,
+                                    89,
+                                    107,
+                                    131,
+                                    132
+                                ]
+                            ],
+                            [
+                                [
+                                    133,
+                                    134,
+                                    100,
+                                    89,
+                                    130
+                                ]
+                            ],
+                            [
+                                [
+                                    131,
+                                    107,
+                                    88,
+                                    129
+                                ]
+                            ],
+                            [
+                                [
+                                    132,
+                                    131,
+                                    135
+                                ]
+                            ],
+                            [
+                                [
+                                    111,
+                                    110,
+                                    134,
+                                    133
+                                ]
+                            ],
+                            [
+                                [
+                                    118,
+                                    80,
+                                    100,
+                                    134
+                                ]
+                            ],
+                            [
+                                [
+                                    128,
+                                    126,
+                                    120,
+                                    123,
+                                    124,
+                                    121
+                                ]
+                            ],
+                            [
+                                [
+                                    127,
+                                    128,
+                                    121,
+                                    122
+                                ]
+                            ],
+                            [
+                                [
+                                    112,
+                                    119,
+                                    120,
+                                    126,
+                                    125,
+                                    114
+                                ]
+                            ],
+                            [
+                                [
+                                    117,
+                                    135,
+                                    131,
+                                    129,
+                                    119,
+                                    112,
+                                    113,
+                                    118,
+                                    134,
+                                    110,
+                                    109,
+                                    115
+                                ]
+                            ],
+                            [
+                                [
+                                    135,
+                                    117,
+                                    116,
+                                    108,
+                                    111,
+                                    133,
+                                    130,
+                                    132
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_70p": 19.505382537841797,
+                                "b3_h_dak_50p": 18.933250427246097,
+                                "b3_azimut": 162.33074951171875,
+                                "b3_h_dak_min": 17.423263549804688,
+                                "b3_hellingshoek": 43.30417251586914,
+                                "b3_h_dak_max": 20.40340805053711
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_hellingshoek": 43.84505081176758,
+                                "b3_h_dak_max": 20.40340805053711,
+                                "b3_h_dak_min": 17.397768020629883,
+                                "b3_h_dak_70p": 19.190113067626953,
+                                "b3_h_dak_50p": 18.714000701904297,
+                                "b3_azimut": 342.27001953125
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_50p": 20.355133056640625,
+                                "b3_h_dak_max": 23.60285758972168,
+                                "b3_azimut": 342.15765380859375,
+                                "b3_h_dak_min": 17.099716186523438,
+                                "b3_h_dak_70p": 21.466901779174805,
+                                "b3_hellingshoek": 44.336795806884766
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_max": 23.60285758972168,
+                                "b3_azimut": 162.62261962890625,
+                                "b3_hellingshoek": 44.331974029541016,
+                                "b3_h_dak_min": 17.891324996948242,
+                                "b3_h_dak_70p": 22.14396095275879,
+                                "b3_h_dak_50p": 21.240114212036133
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_hellingshoek": 2.0918591022491455,
+                                "b3_h_dak_max": 20.27924346923828,
+                                "b3_h_dak_50p": 20.04593086242676,
+                                "b3_h_dak_70p": 20.061616897583008,
+                                "b3_azimut": 352.3979797363281,
+                                "b3_h_dak_min": 20.00972366333008
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                2,
+                                1,
+                                1,
+                                2,
+                                1,
+                                2,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                2,
+                                2,
+                                1,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "parents": [
+                "NL.IMBAG.Pand.0756100000003827"
+            ]
+        },
+        "612d448de2d34187870817ae29da02d03a7319c6": {
+            "type": "Building",
+            "geographicalExtent": [
+                194629.7099998474,
+                405959.43000183103,
+                14.737000465393066,
+                194647.25000076293,
+                405978.5199981689,
+                23.32378578186035
+            ],
+            "attributes": {
+                "b3_dak_type": "slanted",
+                "b3_extrusie": "standard",
+                "b3_h_dak_50p": 21.152000427246097,
+                "b3_h_dak_70p": 22.038000106811523,
+                "b3_h_dak_max": 23.26499938964844,
+                "b3_h_dak_min": 18.666000366210938,
+                "b3_h_maaiveld": 14.737000465393066,
+                "b3_h_nok": 23.323707580566406,
+                "b3_is_glas_dak": false,
+                "b3_kas_warenhuis": false,
+                "b3_mutatie_ahn3_ahn4": false,
+                "b3_mutatie_ahn4_ahn5": false,
+                "b3_n_nok": 3,
+                "b3_n_vlakken": 4,
+                "b3_nodata_fractie_ahn3": 0.05935050547122955,
+                "b3_nodata_fractie_ahn4": 0.010078387334942818,
+                "b3_nodata_fractie_ahn5": 0.005599104333668947,
+                "b3_nodata_radius_ahn3": 0,
+                "b3_nodata_radius_ahn4": 0,
+                "b3_nodata_radius_ahn5": 0,
+                "b3_puntdichtheid_ahn3": 11.747618675231934,
+                "b3_puntdichtheid_ahn4": 15.547511100769045,
+                "b3_puntdichtheid_ahn5": 17.60360336303711,
+                "b3_pw_bron": "ahn5",
+                "b3_pw_datum": 2024,
+                "b3_pw_onvoldoende": false,
+                "b3_pw_selectie_reden": "PREFERRED_AND_LATEST",
+                "b3_rmse_lod12": 1.5769145488739014,
+                "b3_rmse_lod13": 1.5769145488739014,
+                "b3_rmse_lod22": 0.06563089042901993,
+                "b3_t_run": 125,
+                "b3_val3dity_lod12": "[]",
+                "b3_val3dity_lod13": "[]",
+                "b3_val3dity_lod22": "[]",
+                "b3_volume_lod12": 1622.5206298828125,
+                "b3_volume_lod13": 1622.5206298828125,
+                "b3_volume_lod22": 1422.6810302734375,
+                "begingeldigheid": "2015-11-16",
+                "documentdatum": "2015-11-16",
+                "documentnummer": "R-BR/2015/2901",
+                "fid": 14521743,
+                "geconstateerd": false,
+                "identificatie": "NL.IMBAG.Pand.0756100000001889",
+                "oorspronkelijkbouwjaar": 1991,
+                "status": "Pand in gebruik",
+                "tijdstipregistratie": "2015-11-16T10:39:51Z",
+                "tijdstipregistratielv": "2015-11-16T11:00:37Z",
+                "voorkomenidentificatie": 2,
+                "b3_opp_grond": 223.71,
+                "b3_opp_dak_plat": 0,
+                "b3_opp_dak_schuin": 260.39,
+                "b3_opp_scheidingsmuur": 0,
+                "b3_opp_buitenmuur": 339.03,
+                "b3_bouwlagen": 2
+            },
+            "geometry": [
+                {
+                    "type": "MultiSurface",
+                    "lod": "0",
+                    "boundaries": [
+                        [
+                            [
+                                0,
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9
+                            ]
+                        ]
+                    ]
+                }
+            ],
+            "children": [
+                "NL.IMBAG.Pand.0756100000001889-0"
+            ]
+        },
+        "cbd0f2dd2d42790965e4832f2819220967abba2a": {
+            "type": "BuildingPart",
+            "geometry": [
+                {
+                    "type": "Solid",
+                    "lod": "1.2",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    152,
+                                    153,
+                                    154,
+                                    155,
+                                    156,
+                                    157,
+                                    158,
+                                    159,
+                                    160,
+                                    161,
+                                    162,
+                                    163,
+                                    164,
+                                    165,
+                                    166,
+                                    167,
+                                    168,
+                                    169,
+                                    170,
+                                    171,
+                                    172,
+                                    173,
+                                    174,
+                                    175
+                                ]
+                            ],
+                            [
+                                [
+                                    176,
+                                    158,
+                                    157,
+                                    177
+                                ]
+                            ],
+                            [
+                                [
+                                    178,
+                                    155,
+                                    154,
+                                    179
+                                ]
+                            ],
+                            [
+                                [
+                                    180,
+                                    156,
+                                    155,
+                                    178
+                                ]
+                            ],
+                            [
+                                [
+                                    177,
+                                    157,
+                                    156,
+                                    180
+                                ]
+                            ],
+                            [
+                                [
+                                    179,
+                                    154,
+                                    153,
+                                    181
+                                ]
+                            ],
+                            [
+                                [
+                                    182,
+                                    152,
+                                    175,
+                                    183
+                                ]
+                            ],
+                            [
+                                [
+                                    184,
+                                    171,
+                                    170,
+                                    185
+                                ]
+                            ],
+                            [
+                                [
+                                    186,
+                                    174,
+                                    173,
+                                    187
+                                ]
+                            ],
+                            [
+                                [
+                                    187,
+                                    173,
+                                    172,
+                                    188
+                                ]
+                            ],
+                            [
+                                [
+                                    188,
+                                    172,
+                                    171,
+                                    184
+                                ]
+                            ],
+                            [
+                                [
+                                    189,
+                                    166,
+                                    165,
+                                    190
+                                ]
+                            ],
+                            [
+                                [
+                                    190,
+                                    165,
+                                    164,
+                                    191
+                                ]
+                            ],
+                            [
+                                [
+                                    192,
+                                    163,
+                                    162,
+                                    193
+                                ]
+                            ],
+                            [
+                                [
+                                    193,
+                                    162,
+                                    161,
+                                    194
+                                ]
+                            ],
+                            [
+                                [
+                                    183,
+                                    175,
+                                    174,
+                                    186
+                                ]
+                            ],
+                            [
+                                [
+                                    195,
+                                    167,
+                                    166,
+                                    189
+                                ]
+                            ],
+                            [
+                                [
+                                    196,
+                                    169,
+                                    168,
+                                    197
+                                ]
+                            ],
+                            [
+                                [
+                                    191,
+                                    164,
+                                    163,
+                                    192
+                                ]
+                            ],
+                            [
+                                [
+                                    197,
+                                    168,
+                                    167,
+                                    195
+                                ]
+                            ],
+                            [
+                                [
+                                    198,
+                                    159,
+                                    158,
+                                    176
+                                ]
+                            ],
+                            [
+                                [
+                                    199,
+                                    160,
+                                    159,
+                                    198
+                                ]
+                            ],
+                            [
+                                [
+                                    194,
+                                    161,
+                                    160,
+                                    199
+                                ]
+                            ],
+                            [
+                                [
+                                    185,
+                                    170,
+                                    169,
+                                    196
+                                ]
+                            ],
+                            [
+                                [
+                                    181,
+                                    153,
+                                    152,
+                                    182
+                                ]
+                            ],
+                            [
+                                [
+                                    181,
+                                    182,
+                                    183,
+                                    186,
+                                    187,
+                                    188,
+                                    184,
+                                    185,
+                                    196,
+                                    197,
+                                    195,
+                                    189,
+                                    190,
+                                    191,
+                                    192,
+                                    193,
+                                    194,
+                                    199,
+                                    198,
+                                    176,
+                                    177,
+                                    180,
+                                    178,
+                                    179
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_min": 17.65143394470215,
+                                "b3_h_dak_max": 23.73617935180664,
+                                "b3_h_dak_70p": 20.62754821777344,
+                                "b3_h_dak_50p": 19.6186466217041
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                3
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Solid",
+                    "lod": "1.3",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    170,
+                                    171,
+                                    200,
+                                    172,
+                                    173,
+                                    174,
+                                    175,
+                                    152,
+                                    201,
+                                    153,
+                                    154,
+                                    155,
+                                    156,
+                                    157,
+                                    158,
+                                    202,
+                                    159,
+                                    160,
+                                    161,
+                                    162,
+                                    163,
+                                    164,
+                                    165,
+                                    166,
+                                    167,
+                                    168,
+                                    169
+                                ]
+                            ],
+                            [
+                                [
+                                    203,
+                                    155,
+                                    154,
+                                    204
+                                ]
+                            ],
+                            [
+                                [
+                                    205,
+                                    156,
+                                    155,
+                                    203
+                                ]
+                            ],
+                            [
+                                [
+                                    206,
+                                    157,
+                                    156,
+                                    205
+                                ]
+                            ],
+                            [
+                                [
+                                    207,
+                                    152,
+                                    175,
+                                    208
+                                ]
+                            ],
+                            [
+                                [
+                                    209,
+                                    171,
+                                    170,
+                                    210
+                                ]
+                            ],
+                            [
+                                [
+                                    211,
+                                    174,
+                                    173,
+                                    212
+                                ]
+                            ],
+                            [
+                                [
+                                    208,
+                                    175,
+                                    174,
+                                    211
+                                ]
+                            ],
+                            [
+                                [
+                                    213,
+                                    165,
+                                    164,
+                                    214
+                                ]
+                            ],
+                            [
+                                [
+                                    215,
+                                    216,
+                                    214,
+                                    217
+                                ]
+                            ],
+                            [
+                                [
+                                    218,
+                                    163,
+                                    162,
+                                    219
+                                ]
+                            ],
+                            [
+                                [
+                                    212,
+                                    173,
+                                    172,
+                                    220
+                                ]
+                            ],
+                            [
+                                [
+                                    221,
+                                    167,
+                                    166,
+                                    222
+                                ]
+                            ],
+                            [
+                                [
+                                    223,
+                                    169,
+                                    168,
+                                    224
+                                ]
+                            ],
+                            [
+                                [
+                                    225,
+                                    158,
+                                    157,
+                                    206
+                                ]
+                            ],
+                            [
+                                [
+                                    217,
+                                    214,
+                                    164,
+                                    163,
+                                    218
+                                ]
+                            ],
+                            [
+                                [
+                                    224,
+                                    168,
+                                    167,
+                                    221
+                                ]
+                            ],
+                            [
+                                [
+                                    222,
+                                    166,
+                                    165,
+                                    213
+                                ]
+                            ],
+                            [
+                                [
+                                    226,
+                                    227,
+                                    216,
+                                    215
+                                ]
+                            ],
+                            [
+                                [
+                                    228,
+                                    229,
+                                    230,
+                                    231
+                                ]
+                            ],
+                            [
+                                [
+                                    231,
+                                    230,
+                                    227,
+                                    226
+                                ]
+                            ],
+                            [
+                                [
+                                    219,
+                                    162,
+                                    161,
+                                    232
+                                ]
+                            ],
+                            [
+                                [
+                                    232,
+                                    161,
+                                    160,
+                                    233
+                                ]
+                            ],
+                            [
+                                [
+                                    233,
+                                    160,
+                                    159,
+                                    234
+                                ]
+                            ],
+                            [
+                                [
+                                    234,
+                                    159,
+                                    202,
+                                    235,
+                                    236
+                                ]
+                            ],
+                            [
+                                [
+                                    204,
+                                    154,
+                                    153,
+                                    237
+                                ]
+                            ],
+                            [
+                                [
+                                    238,
+                                    239,
+                                    201,
+                                    152,
+                                    207
+                                ]
+                            ],
+                            [
+                                [
+                                    240,
+                                    241,
+                                    239,
+                                    238
+                                ]
+                            ],
+                            [
+                                [
+                                    237,
+                                    153,
+                                    201,
+                                    239
+                                ]
+                            ],
+                            [
+                                [
+                                    242,
+                                    243,
+                                    244,
+                                    245
+                                ]
+                            ],
+                            [
+                                [
+                                    246,
+                                    247,
+                                    243,
+                                    242
+                                ]
+                            ],
+                            [
+                                [
+                                    210,
+                                    170,
+                                    169,
+                                    223
+                                ]
+                            ],
+                            [
+                                [
+                                    248,
+                                    200,
+                                    171,
+                                    209
+                                ]
+                            ],
+                            [
+                                [
+                                    220,
+                                    172,
+                                    200,
+                                    248,
+                                    249
+                                ]
+                            ],
+                            [
+                                [
+                                    249,
+                                    248,
+                                    229,
+                                    228
+                                ]
+                            ],
+                            [
+                                [
+                                    235,
+                                    202,
+                                    158,
+                                    225
+                                ]
+                            ],
+                            [
+                                [
+                                    236,
+                                    235,
+                                    247,
+                                    246
+                                ]
+                            ],
+                            [
+                                [
+                                    245,
+                                    244,
+                                    241,
+                                    240
+                                ]
+                            ],
+                            [
+                                [
+                                    229,
+                                    248,
+                                    209,
+                                    210,
+                                    223,
+                                    224,
+                                    221,
+                                    222,
+                                    213,
+                                    214,
+                                    216,
+                                    227,
+                                    230
+                                ]
+                            ],
+                            [
+                                [
+                                    245,
+                                    240,
+                                    238,
+                                    207,
+                                    208,
+                                    211,
+                                    212,
+                                    220,
+                                    249,
+                                    228,
+                                    231,
+                                    226,
+                                    215,
+                                    217,
+                                    218,
+                                    219,
+                                    232,
+                                    233,
+                                    234,
+                                    236,
+                                    246,
+                                    242
+                                ]
+                            ],
+                            [
+                                [
+                                    241,
+                                    244,
+                                    243,
+                                    247,
+                                    235,
+                                    225,
+                                    206,
+                                    205,
+                                    203,
+                                    204,
+                                    237,
+                                    239
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_min": 17.65143394470215,
+                                "b3_h_dak_max": 20.097393035888672,
+                                "b3_h_dak_50p": 17.69491195678711,
+                                "b3_h_dak_70p": 17.70892333984375
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_70p": 21.382173538208008,
+                                "b3_h_dak_min": 18.58306884765625,
+                                "b3_h_dak_max": 23.73617935180664,
+                                "b3_h_dak_50p": 20.69828987121582
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_max": 19.91649627685547,
+                                "b3_h_dak_min": 17.743793487548828,
+                                "b3_h_dak_70p": 17.76325225830078,
+                                "b3_h_dak_50p": 17.759695053100586
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                2,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                2,
+                                2,
+                                2,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                2,
+                                1,
+                                2,
+                                2,
+                                1,
+                                1,
+                                1,
+                                2,
+                                1,
+                                2,
+                                2,
+                                3,
+                                4,
+                                5
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Solid",
+                    "lod": "2.2",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    170,
+                                    171,
+                                    200,
+                                    172,
+                                    250,
+                                    251,
+                                    174,
+                                    175,
+                                    152,
+                                    201,
+                                    153,
+                                    154,
+                                    155,
+                                    156,
+                                    157,
+                                    158,
+                                    202,
+                                    159,
+                                    252,
+                                    160,
+                                    161,
+                                    162,
+                                    253,
+                                    163,
+                                    164,
+                                    165,
+                                    166,
+                                    167,
+                                    168,
+                                    169
+                                ]
+                            ],
+                            [
+                                [
+                                    254,
+                                    155,
+                                    154,
+                                    255
+                                ]
+                            ],
+                            [
+                                [
+                                    256,
+                                    156,
+                                    155,
+                                    254
+                                ]
+                            ],
+                            [
+                                [
+                                    257,
+                                    157,
+                                    156,
+                                    256
+                                ]
+                            ],
+                            [
+                                [
+                                    258,
+                                    171,
+                                    170,
+                                    259
+                                ]
+                            ],
+                            [
+                                [
+                                    260,
+                                    261,
+                                    262,
+                                    263,
+                                    264
+                                ]
+                            ],
+                            [
+                                [
+                                    265,
+                                    202,
+                                    158,
+                                    266
+                                ]
+                            ],
+                            [
+                                [
+                                    267,
+                                    268,
+                                    269
+                                ]
+                            ],
+                            [
+                                [
+                                    270,
+                                    265,
+                                    271,
+                                    272
+                                ]
+                            ],
+                            [
+                                [
+                                    273,
+                                    274,
+                                    262,
+                                    261
+                                ]
+                            ],
+                            [
+                                [
+                                    272,
+                                    271,
+                                    275,
+                                    276
+                                ]
+                            ],
+                            [
+                                [
+                                    277,
+                                    167,
+                                    166,
+                                    278
+                                ]
+                            ],
+                            [
+                                [
+                                    279,
+                                    169,
+                                    168,
+                                    280
+                                ]
+                            ],
+                            [
+                                [
+                                    266,
+                                    158,
+                                    157,
+                                    257
+                                ]
+                            ],
+                            [
+                                [
+                                    281,
+                                    159,
+                                    202,
+                                    265,
+                                    270
+                                ]
+                            ],
+                            [
+                                [
+                                    282,
+                                    252,
+                                    159,
+                                    281
+                                ]
+                            ],
+                            [
+                                [
+                                    283,
+                                    165,
+                                    164,
+                                    284
+                                ]
+                            ],
+                            [
+                                [
+                                    285,
+                                    284,
+                                    164,
+                                    163,
+                                    286
+                                ]
+                            ],
+                            [
+                                [
+                                    286,
+                                    163,
+                                    253,
+                                    287
+                                ]
+                            ],
+                            [
+                                [
+                                    288,
+                                    289,
+                                    290,
+                                    291
+                                ]
+                            ],
+                            [
+                                [
+                                    292,
+                                    293,
+                                    289,
+                                    288
+                                ]
+                            ],
+                            [
+                                [
+                                    294,
+                                    295,
+                                    284,
+                                    285
+                                ]
+                            ],
+                            [
+                                [
+                                    280,
+                                    168,
+                                    167,
+                                    277
+                                ]
+                            ],
+                            [
+                                [
+                                    278,
+                                    166,
+                                    165,
+                                    283
+                                ]
+                            ],
+                            [
+                                [
+                                    296,
+                                    297,
+                                    295,
+                                    294
+                                ]
+                            ],
+                            [
+                                [
+                                    291,
+                                    290,
+                                    297,
+                                    296
+                                ]
+                            ],
+                            [
+                                [
+                                    287,
+                                    253,
+                                    162,
+                                    298
+                                ]
+                            ],
+                            [
+                                [
+                                    298,
+                                    162,
+                                    161,
+                                    299
+                                ]
+                            ],
+                            [
+                                [
+                                    299,
+                                    161,
+                                    160,
+                                    300
+                                ]
+                            ],
+                            [
+                                [
+                                    300,
+                                    160,
+                                    252,
+                                    282,
+                                    301
+                                ]
+                            ],
+                            [
+                                [
+                                    255,
+                                    154,
+                                    153,
+                                    302
+                                ]
+                            ],
+                            [
+                                [
+                                    268,
+                                    267,
+                                    174,
+                                    251,
+                                    303
+                                ]
+                            ],
+                            [
+                                [
+                                    304,
+                                    175,
+                                    174,
+                                    267
+                                ]
+                            ],
+                            [
+                                [
+                                    303,
+                                    251,
+                                    250,
+                                    305
+                                ]
+                            ],
+                            [
+                                [
+                                    306,
+                                    152,
+                                    175,
+                                    304
+                                ]
+                            ],
+                            [
+                                [
+                                    259,
+                                    170,
+                                    169,
+                                    279
+                                ]
+                            ],
+                            [
+                                [
+                                    307,
+                                    308,
+                                    201,
+                                    152,
+                                    306
+                                ]
+                            ],
+                            [
+                                [
+                                    309,
+                                    310,
+                                    311,
+                                    308,
+                                    307
+                                ]
+                            ],
+                            [
+                                [
+                                    302,
+                                    153,
+                                    201,
+                                    308
+                                ]
+                            ],
+                            [
+                                [
+                                    276,
+                                    275,
+                                    312,
+                                    313
+                                ]
+                            ],
+                            [
+                                [
+                                    314,
+                                    172,
+                                    200,
+                                    293,
+                                    292
+                                ]
+                            ],
+                            [
+                                [
+                                    315,
+                                    305,
+                                    250,
+                                    172,
+                                    314
+                                ]
+                            ],
+                            [
+                                [
+                                    293,
+                                    200,
+                                    171,
+                                    258
+                                ]
+                            ],
+                            [
+                                [
+                                    301,
+                                    282,
+                                    274,
+                                    273
+                                ]
+                            ],
+                            [
+                                [
+                                    261,
+                                    260,
+                                    316
+                                ]
+                            ],
+                            [
+                                [
+                                    305,
+                                    315,
+                                    316
+                                ]
+                            ],
+                            [
+                                [
+                                    264,
+                                    263,
+                                    310,
+                                    309
+                                ]
+                            ],
+                            [
+                                [
+                                    313,
+                                    312,
+                                    311,
+                                    310
+                                ]
+                            ],
+                            [
+                                [
+                                    301,
+                                    273,
+                                    261,
+                                    287,
+                                    298,
+                                    299,
+                                    300
+                                ]
+                            ],
+                            [
+                                [
+                                    311,
+                                    312,
+                                    275,
+                                    271,
+                                    265,
+                                    266,
+                                    257,
+                                    256,
+                                    254,
+                                    255,
+                                    302,
+                                    308
+                                ]
+                            ],
+                            [
+                                [
+                                    261,
+                                    316,
+                                    315,
+                                    314,
+                                    292,
+                                    288,
+                                    291,
+                                    296,
+                                    294,
+                                    285,
+                                    286,
+                                    287
+                                ]
+                            ],
+                            [
+                                [
+                                    293,
+                                    258,
+                                    259,
+                                    279,
+                                    280,
+                                    277,
+                                    278,
+                                    283,
+                                    284,
+                                    295,
+                                    297,
+                                    290,
+                                    289
+                                ]
+                            ],
+                            [
+                                [
+                                    274,
+                                    282,
+                                    281,
+                                    270,
+                                    272,
+                                    276
+                                ]
+                            ],
+                            [
+                                [
+                                    305,
+                                    316,
+                                    260,
+                                    264,
+                                    269,
+                                    268,
+                                    303
+                                ]
+                            ],
+                            [
+                                [
+                                    264,
+                                    309,
+                                    307,
+                                    306,
+                                    304,
+                                    267,
+                                    269
+                                ]
+                            ],
+                            [
+                                [
+                                    313,
+                                    310,
+                                    263,
+                                    262,
+                                    274,
+                                    276
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": true
+                            },
+                            {
+                                "type": "WallSurface",
+                                "on_footprint_edge": false
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_min": 19.763090133666992,
+                                "b3_h_dak_50p": 21.051944732666016,
+                                "b3_azimut": 192.4789581298828,
+                                "b3_hellingshoek": 38.42595672607422,
+                                "b3_h_dak_max": 23.677284240722656,
+                                "b3_h_dak_70p": 21.740819931030273
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_min": 17.743793487548828,
+                                "b3_hellingshoek": 0.18974563479423523,
+                                "b3_azimut": 285.10260009765625,
+                                "b3_h_dak_50p": 17.759695053100586,
+                                "b3_h_dak_70p": 17.76325225830078,
+                                "b3_h_dak_max": 19.91649627685547
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_70p": 21.429677963256836,
+                                "b3_h_dak_50p": 20.672515869140625,
+                                "b3_h_dak_min": 18.58306884765625,
+                                "b3_azimut": 250.3622283935547,
+                                "b3_hellingshoek": 37.831295013427734,
+                                "b3_h_dak_max": 23.649612426757812
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_max": 20.097393035888672,
+                                "b3_h_dak_50p": 17.69491195678711,
+                                "b3_hellingshoek": 0.8744685053825378,
+                                "b3_h_dak_min": 17.65143394470215,
+                                "b3_azimut": 85.46512603759766,
+                                "b3_h_dak_70p": 17.70892333984375
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_max": 23.230405807495117,
+                                "b3_h_dak_70p": 21.27609062194824,
+                                "b3_h_dak_min": 18.996557235717773,
+                                "b3_hellingshoek": 38.57858657836914,
+                                "b3_azimut": 135.79833984375,
+                                "b3_h_dak_50p": 20.688526153564453
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_70p": 21.51858139038086,
+                                "b3_h_dak_max": 23.73617935180664,
+                                "b3_h_dak_50p": 20.71892738342285,
+                                "b3_hellingshoek": 37.8968620300293,
+                                "b3_azimut": 313.2261657714844,
+                                "b3_h_dak_min": 19.386171340942383
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_max": 23.276262283325195,
+                                "b3_h_dak_70p": 21.44510078430176,
+                                "b3_h_dak_min": 19.436080932617188,
+                                "b3_h_dak_50p": 20.753002166748047,
+                                "b3_azimut": 12.81070041656494,
+                                "b3_hellingshoek": 38.73487091064453
+                            },
+                            {
+                                "type": "RoofSurface",
+                                "b3_h_dak_max": 23.73617935180664,
+                                "b3_azimut": 73.43846893310547,
+                                "b3_hellingshoek": 38.158226013183594,
+                                "b3_h_dak_70p": 21.30094337463379,
+                                "b3_h_dak_min": 19.15349006652832,
+                                "b3_h_dak_50p": 20.6290283203125
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                2,
+                                1,
+                                2,
+                                2,
+                                2,
+                                2,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                2,
+                                2,
+                                2,
+                                1,
+                                1,
+                                2,
+                                2,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                2,
+                                1,
+                                2,
+                                1,
+                                1,
+                                1,
+                                2,
+                                2,
+                                2,
+                                2,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "parents": [
+                "NL.IMBAG.Pand.0756100000002523"
+            ]
+        }
+    },
+    "versioning": {
+        "versions": {
+            "d8bcc9c3b729ebbb6f701fc9983cd04e78173782": {
+                "objects": {
+                    "NL.IMBAG.Pand.0756100000020606": "916b415306f30a28b1e2dd19b5a3941f5a77c44b",
+                    "NL.IMBAG.Pand.0756100000003827": "b4f2efa670a78472082d7f87bf67449a936fc311",
+                    "NL.IMBAG.Pand.0756100000001889-0": "e52223855de1116eb9260ae447e3a1082ee5dbca",
+                    "NL.IMBAG.Pand.0756100000002523": "8d86060d149f9197e6ee5957c28280aa85fdaefe",
+                    "NL.IMBAG.Pand.0756100000020606-0": "885e25b4c3e6cbb64a26d576458c689d5dd292e9",
+                    "NL.IMBAG.Pand.0756100000003827-0": "2ed9da99474d8147666ecfa2a2d7c3dc30da2a26",
+                    "NL.IMBAG.Pand.0756100000001889": "612d448de2d34187870817ae29da02d03a7319c6",
+                    "NL.IMBAG.Pand.0756100000002523-0": "cbd0f2dd2d42790965e4832f2819220967abba2a"
+                },
+                "author": "Mark",
+                "date": "2026-11-16T13:53:06.783199Z",
+                "message": "Push for first test"
+            }
+        },
+        "tags": {},
+        "branches": {
+            "main": "d8bcc9c3b729ebbb6f701fc9983cd04e78173782"
+        }
+    },
+    "vertices": [
+        [
+            29643,
+            36748,
+            0
+        ],
+        [
+            33352,
+            25759,
+            0
+        ],
+        [
+            37902,
+            27289,
+            0
+        ],
+        [
+            38303,
+            26159,
+            0
+        ],
+        [
+            42992,
+            27738,
+            0
+        ],
+        [
+            42622,
+            28869,
+            0
+        ],
+        [
+            47163,
+            30418,
+            0
+        ],
+        [
+            42323,
+            44848,
+            0
+        ],
+        [
+            29622,
+            40558,
+            0
+        ],
+        [
+            30781,
+            37132,
+            0
+        ],
+        [
+            42323,
+            44848,
+            14737
+        ],
+        [
+            47163,
+            30418,
+            14737
+        ],
+        [
+            42622,
+            28869,
+            14737
+        ],
+        [
+            42992,
+            27738,
+            14737
+        ],
+        [
+            38303,
+            26159,
+            14737
+        ],
+        [
+            37902,
+            27289,
+            14737
+        ],
+        [
+            33352,
+            25759,
+            14737
+        ],
+        [
+            29643,
+            36748,
+            14737
+        ],
+        [
+            30781,
+            37132,
+            14737
+        ],
+        [
+            29622,
+            40558,
+            14737
+        ],
+        [
+            33352,
+            25759,
+            21989
+        ],
+        [
+            37902,
+            27289,
+            21989
+        ],
+        [
+            38303,
+            26159,
+            21989
+        ],
+        [
+            29643,
+            36748,
+            21989
+        ],
+        [
+            42992,
+            27738,
+            21989
+        ],
+        [
+            42622,
+            28869,
+            21989
+        ],
+        [
+            47163,
+            30418,
+            21989
+        ],
+        [
+            42323,
+            44848,
+            21989
+        ],
+        [
+            29622,
+            40558,
+            21989
+        ],
+        [
+            30781,
+            37132,
+            21989
+        ],
+        [
+            31204,
+            32124,
+            14737
+        ],
+        [
+            30221,
+            38787,
+            14737
+        ],
+        [
+            33056,
+            41718,
+            14737
+        ],
+        [
+            45036,
+            36759,
+            14737
+        ],
+        [
+            37902,
+            27289,
+            19476
+        ],
+        [
+            38303,
+            26159,
+            18790
+        ],
+        [
+            33352,
+            25759,
+            19470
+        ],
+        [
+            42992,
+            27738,
+            18798
+        ],
+        [
+            42622,
+            28869,
+            19478
+        ],
+        [
+            45036,
+            36759,
+            23323
+        ],
+        [
+            42323,
+            44848,
+            18378
+        ],
+        [
+            47163,
+            30418,
+            19496
+        ],
+        [
+            29622,
+            40558,
+            20660
+        ],
+        [
+            30221,
+            38787,
+            19472
+        ],
+        [
+            30781,
+            37132,
+            20485
+        ],
+        [
+            29643,
+            36748,
+            20485
+        ],
+        [
+            33056,
+            41718,
+            20379
+        ],
+        [
+            33056,
+            41718,
+            18386
+        ],
+        [
+            31204,
+            32124,
+            23314
+        ],
+        [
+            32368,
+            40653,
+            19955
+        ],
+        [
+            32368,
+            40653,
+            18844
+        ],
+        [
+            32111,
+            40703,
+            18769
+        ],
+        [
+            32111,
+            40703,
+            20055
+        ],
+        [
+            30500,
+            38901,
+            19461
+        ],
+        [
+            23040,
+            4430,
+            0
+        ],
+        [
+            24136,
+            5702,
+            0
+        ],
+        [
+            22689,
+            10429,
+            0
+        ],
+        [
+            19862,
+            7370,
+            0
+        ],
+        [
+            24136,
+            5702,
+            14532
+        ],
+        [
+            23040,
+            4430,
+            14532
+        ],
+        [
+            19862,
+            7370,
+            14532
+        ],
+        [
+            22689,
+            10429,
+            14532
+        ],
+        [
+            24136,
+            5702,
+            17796
+        ],
+        [
+            22689,
+            10429,
+            17796
+        ],
+        [
+            19862,
+            7370,
+            17796
+        ],
+        [
+            23040,
+            4430,
+            17796
+        ],
+        [
+            24136,
+            5702,
+            17680
+        ],
+        [
+            22689,
+            10429,
+            17839
+        ],
+        [
+            19862,
+            7370,
+            17726
+        ],
+        [
+            23040,
+            4430,
+            17633
+        ],
+        [
+            39904,
+            10367,
+            0
+        ],
+        [
+            36882,
+            9418,
+            0
+        ],
+        [
+            39860,
+            0,
+            0
+        ],
+        [
+            45295,
+            1730,
+            0
+        ],
+        [
+            44823,
+            3198,
+            0
+        ],
+        [
+            49192,
+            4609,
+            0
+        ],
+        [
+            45872,
+            14909,
+            0
+        ],
+        [
+            47773,
+            15528,
+            0
+        ],
+        [
+            46203,
+            20378,
+            0
+        ],
+        [
+            37602,
+            17609,
+            0
+        ],
+        [
+            45295,
+            1730,
+            14692
+        ],
+        [
+            39860,
+            0,
+            14692
+        ],
+        [
+            36882,
+            9418,
+            14692
+        ],
+        [
+            39904,
+            10367,
+            14692
+        ],
+        [
+            37602,
+            17609,
+            14692
+        ],
+        [
+            46203,
+            20378,
+            14692
+        ],
+        [
+            47773,
+            15528,
+            14692
+        ],
+        [
+            45872,
+            14909,
+            14692
+        ],
+        [
+            49192,
+            4609,
+            14692
+        ],
+        [
+            44823,
+            3198,
+            14692
+        ],
+        [
+            39860,
+            0,
+            21061
+        ],
+        [
+            45295,
+            1730,
+            21061
+        ],
+        [
+            44823,
+            3198,
+            21061
+        ],
+        [
+            36882,
+            9418,
+            21061
+        ],
+        [
+            39904,
+            10367,
+            21061
+        ],
+        [
+            46203,
+            20378,
+            21061
+        ],
+        [
+            37602,
+            17609,
+            21061
+        ],
+        [
+            49192,
+            4609,
+            21061
+        ],
+        [
+            45872,
+            14909,
+            21061
+        ],
+        [
+            47773,
+            15528,
+            21061
+        ],
+        [
+            45120,
+            2273,
+            14692
+        ],
+        [
+            38135,
+            5458,
+            14692
+        ],
+        [
+            39279,
+            12331,
+            14692
+        ],
+        [
+            38361,
+            15221,
+            14692
+        ],
+        [
+            46981,
+            17972,
+            14692
+        ],
+        [
+            46009,
+            14486,
+            14692
+        ],
+        [
+            47918,
+            8563,
+            14692
+        ],
+        [
+            46021,
+            3585,
+            14692
+        ],
+        [
+            43111,
+            2346,
+            20068
+        ],
+        [
+            43111,
+            2346,
+            18947
+        ],
+        [
+            43776,
+            1741,
+            18189
+        ],
+        [
+            43776,
+            1741,
+            20094
+        ],
+        [
+            38135,
+            5458,
+            23300
+        ],
+        [
+            39860,
+            0,
+            17709
+        ],
+        [
+            36882,
+            9418,
+            19241
+        ],
+        [
+            42920,
+            3021,
+            19632
+        ],
+        [
+            42920,
+            3021,
+            20043
+        ],
+        [
+            44284,
+            3863,
+            20019
+        ],
+        [
+            45295,
+            1730,
+            17735
+        ],
+        [
+            47918,
+            8563,
+            23341
+        ],
+        [
+            46009,
+            14486,
+            17260
+        ],
+        [
+            46981,
+            17972,
+            20113
+        ],
+        [
+            46203,
+            20378,
+            17683
+        ],
+        [
+            45872,
+            14909,
+            17679
+        ],
+        [
+            47773,
+            15528,
+            17692
+        ],
+        [
+            39904,
+            10367,
+            19264
+        ],
+        [
+            39279,
+            12331,
+            17250
+        ],
+        [
+            37602,
+            17609,
+            17702
+        ],
+        [
+            38361,
+            15221,
+            20108
+        ],
+        [
+            49192,
+            4609,
+            19282
+        ],
+        [
+            44823,
+            3198,
+            20046
+        ],
+        [
+            46021,
+            3585,
+            19253
+        ],
+        [
+            46021,
+            3585,
+            20038
+        ],
+        [
+            45120,
+            2273,
+            20081
+        ],
+        [
+            45120,
+            2273,
+            18293
+        ],
+        [
+            45409,
+            4208,
+            20012
+        ],
+        [
+            6423,
+            13789,
+            0
+        ],
+        [
+            12372,
+            12509,
+            0
+        ],
+        [
+            13243,
+            13479,
+            0
+        ],
+        [
+            17153,
+            9859,
+            0
+        ],
+        [
+            21442,
+            14479,
+            0
+        ],
+        [
+            18955,
+            22521,
+            0
+        ],
+        [
+            18650,
+            22411,
+            0
+        ],
+        [
+            18733,
+            22097,
+            0
+        ],
+        [
+            15231,
+            21011,
+            0
+        ],
+        [
+            14692,
+            22770,
+            0
+        ],
+        [
+            8780,
+            24089,
+            0
+        ],
+        [
+            4662,
+            19641,
+            0
+        ],
+        [
+            349,
+            18360,
+            0
+        ],
+        [
+            291,
+            18581,
+            0
+        ],
+        [
+            0,
+            18488,
+            0
+        ],
+        [
+            1803,
+            12418,
+            0
+        ],
+        [
+            14692,
+            22770,
+            14559
+        ],
+        [
+            15231,
+            21011,
+            14559
+        ],
+        [
+            18733,
+            22097,
+            14559
+        ],
+        [
+            18650,
+            22411,
+            14559
+        ],
+        [
+            18955,
+            22521,
+            14559
+        ],
+        [
+            21442,
+            14479,
+            14559
+        ],
+        [
+            17153,
+            9859,
+            14559
+        ],
+        [
+            13243,
+            13479,
+            14559
+        ],
+        [
+            12451,
+            12596,
+            14559
+        ],
+        [
+            12117,
+            12668,
+            14559
+        ],
+        [
+            12148,
+            12557,
+            14559
+        ],
+        [
+            6423,
+            13789,
+            14559
+        ],
+        [
+            5823,
+            13611,
+            14559
+        ],
+        [
+            5731,
+            13583,
+            14559
+        ],
+        [
+            1803,
+            12418,
+            14559
+        ],
+        [
+            83,
+            18207,
+            14559
+        ],
+        [
+            196,
+            18253,
+            14559
+        ],
+        [
+            107,
+            18523,
+            14559
+        ],
+        [
+            291,
+            18581,
+            14559
+        ],
+        [
+            349,
+            18360,
+            14559
+        ],
+        [
+            4662,
+            19641,
+            14559
+        ],
+        [
+            8703,
+            23961,
+            14559
+        ],
+        [
+            8987,
+            23901,
+            14559
+        ],
+        [
+            8945,
+            24052,
+            14559
+        ],
+        [
+            17153,
+            9859,
+            20705
+        ],
+        [
+            21442,
+            14479,
+            20705
+        ],
+        [
+            18650,
+            22411,
+            20705
+        ],
+        [
+            18733,
+            22097,
+            20705
+        ],
+        [
+            18955,
+            22521,
+            20705
+        ],
+        [
+            15231,
+            21011,
+            20705
+        ],
+        [
+            14692,
+            22770,
+            20705
+        ],
+        [
+            8945,
+            24052,
+            20705
+        ],
+        [
+            349,
+            18360,
+            20705
+        ],
+        [
+            291,
+            18581,
+            20705
+        ],
+        [
+            8987,
+            23901,
+            20705
+        ],
+        [
+            8703,
+            23961,
+            20705
+        ],
+        [
+            4662,
+            19641,
+            20705
+        ],
+        [
+            1803,
+            12418,
+            20705
+        ],
+        [
+            5731,
+            13583,
+            20705
+        ],
+        [
+            5823,
+            13611,
+            20705
+        ],
+        [
+            6423,
+            13789,
+            20705
+        ],
+        [
+            12148,
+            12557,
+            20705
+        ],
+        [
+            12117,
+            12668,
+            20705
+        ],
+        [
+            83,
+            18207,
+            20705
+        ],
+        [
+            107,
+            18523,
+            20705
+        ],
+        [
+            196,
+            18253,
+            20705
+        ],
+        [
+            13243,
+            13479,
+            20705
+        ],
+        [
+            12451,
+            12596,
+            20705
+        ],
+        [
+            3468,
+            19287,
+            14559
+        ],
+        [
+            14714,
+            22695,
+            14559
+        ],
+        [
+            13397,
+            13336,
+            14559
+        ],
+        [
+            18650,
+            22411,
+            17816
+        ],
+        [
+            18733,
+            22097,
+            17816
+        ],
+        [
+            18955,
+            22521,
+            17816
+        ],
+        [
+            21442,
+            14479,
+            17816
+        ],
+        [
+            14692,
+            22770,
+            21514
+        ],
+        [
+            8945,
+            24052,
+            21514
+        ],
+        [
+            349,
+            18360,
+            17689
+        ],
+        [
+            291,
+            18581,
+            17689
+        ],
+        [
+            8987,
+            23901,
+            21514
+        ],
+        [
+            8703,
+            23961,
+            21514
+        ],
+        [
+            5731,
+            13583,
+            17689
+        ],
+        [
+            5823,
+            13611,
+            17689
+        ],
+        [
+            5824,
+            13679,
+            21514
+        ],
+        [
+            5824,
+            13679,
+            17689
+        ],
+        [
+            5823,
+            13611,
+            21514
+        ],
+        [
+            6423,
+            13789,
+            21514
+        ],
+        [
+            12148,
+            12557,
+            21514
+        ],
+        [
+            4662,
+            19641,
+            21514
+        ],
+        [
+            83,
+            18207,
+            17689
+        ],
+        [
+            1803,
+            12418,
+            17689
+        ],
+        [
+            107,
+            18523,
+            17689
+        ],
+        [
+            196,
+            18253,
+            17689
+        ],
+        [
+            17153,
+            9859,
+            17816
+        ],
+        [
+            5826,
+            14039,
+            21514
+        ],
+        [
+            5826,
+            14039,
+            17689
+        ],
+        [
+            5816,
+            17497,
+            21514
+        ],
+        [
+            5816,
+            17497,
+            17689
+        ],
+        [
+            4992,
+            14220,
+            17689
+        ],
+        [
+            4992,
+            14220,
+            21514
+        ],
+        [
+            12117,
+            12668,
+            21514
+        ],
+        [
+            12451,
+            12596,
+            21514
+        ],
+        [
+            13243,
+            13479,
+            21514
+        ],
+        [
+            13397,
+            13336,
+            17816
+        ],
+        [
+            13397,
+            13336,
+            21514
+        ],
+        [
+            15231,
+            21011,
+            17816
+        ],
+        [
+            14714,
+            22695,
+            21514
+        ],
+        [
+            14714,
+            22695,
+            17816
+        ],
+        [
+            14498,
+            22508,
+            21514
+        ],
+        [
+            14498,
+            22508,
+            17816
+        ],
+        [
+            16285,
+            16824,
+            21514
+        ],
+        [
+            16285,
+            16824,
+            17816
+        ],
+        [
+            17027,
+            16640,
+            17816
+        ],
+        [
+            17027,
+            16640,
+            21514
+        ],
+        [
+            14725,
+            13585,
+            21514
+        ],
+        [
+            14725,
+            13585,
+            17816
+        ],
+        [
+            3468,
+            19287,
+            17689
+        ],
+        [
+            3468,
+            19287,
+            21514
+        ],
+        [
+            4707,
+            19690,
+            14559
+        ],
+        [
+            8692,
+            23993,
+            14559
+        ],
+        [
+            12582,
+            12743,
+            14559
+        ],
+        [
+            6487,
+            13775,
+            14559
+        ],
+        [
+            18650,
+            22411,
+            17756
+        ],
+        [
+            18733,
+            22097,
+            17756
+        ],
+        [
+            18955,
+            22521,
+            17757
+        ],
+        [
+            21442,
+            14479,
+            17771
+        ],
+        [
+            349,
+            18360,
+            17726
+        ],
+        [
+            291,
+            18581,
+            17726
+        ],
+        [
+            10580,
+            18236,
+            23790
+        ],
+        [
+            10580,
+            18236,
+            23732
+        ],
+        [
+            10580,
+            18236,
+            23722
+        ],
+        [
+            10701,
+            18369,
+            23601
+        ],
+        [
+            10701,
+            18369,
+            23789
+        ],
+        [
+            13397,
+            13336,
+            17747
+        ],
+        [
+            17153,
+            9859,
+            17762
+        ],
+        [
+            8987,
+            23901,
+            19766
+        ],
+        [
+            8987,
+            23901,
+            19867
+        ],
+        [
+            9663,
+            21476,
+            21543
+        ],
+        [
+            13397,
+            13336,
+            19353
+        ],
+        [
+            14725,
+            13585,
+            17751
+        ],
+        [
+            14725,
+            13585,
+            18757
+        ],
+        [
+            10761,
+            18192,
+            23729
+        ],
+        [
+            10761,
+            18192,
+            23596
+        ],
+        [
+            16285,
+            16824,
+            17753
+        ],
+        [
+            16285,
+            16824,
+            19741
+        ],
+        [
+            83,
+            18207,
+            17730
+        ],
+        [
+            1803,
+            12418,
+            17711
+        ],
+        [
+            107,
+            18523,
+            17729
+        ],
+        [
+            196,
+            18253,
+            17728
+        ],
+        [
+            13243,
+            13479,
+            19520
+        ],
+        [
+            12582,
+            12743,
+            19467
+        ],
+        [
+            5731,
+            13583,
+            17650
+        ],
+        [
+            5823,
+            13611,
+            17648
+        ],
+        [
+            5823,
+            13611,
+            19046
+        ],
+        [
+            6423,
+            13789,
+            19531
+        ],
+        [
+            6487,
+            13775,
+            19575
+        ],
+        [
+            5816,
+            17497,
+            20055
+        ],
+        [
+            5816,
+            17497,
+            17644
+        ],
+        [
+            4992,
+            14220,
+            17660
+        ],
+        [
+            4992,
+            14220,
+            18597
+        ],
+        [
+            3468,
+            19287,
+            18805
+        ],
+        [
+            3468,
+            19287,
+            17677
+        ],
+        [
+            5824,
+            13679,
+            19064
+        ],
+        [
+            5824,
+            13679,
+            17648
+        ],
+        [
+            5826,
+            14039,
+            19160
+        ],
+        [
+            5826,
+            14039,
+            17648
+        ],
+        [
+            12148,
+            12557,
+            19602
+        ],
+        [
+            12117,
+            12668,
+            19683
+        ],
+        [
+            12451,
+            12596,
+            19684
+        ],
+        [
+            12582,
+            12743,
+            19820
+        ],
+        [
+            15231,
+            21011,
+            17746
+        ],
+        [
+            8692,
+            23993,
+            19651
+        ],
+        [
+            8945,
+            24052,
+            19656
+        ],
+        [
+            4707,
+            19690,
+            19684
+        ],
+        [
+            14692,
+            22770,
+            19637
+        ],
+        [
+            14714,
+            22695,
+            19691
+        ],
+        [
+            14714,
+            22695,
+            17743
+        ],
+        [
+            14498,
+            22508,
+            19876
+        ],
+        [
+            14498,
+            22508,
+            19814
+        ],
+        [
+            14498,
+            22508,
+            17742
+        ],
+        [
+            17027,
+            16640,
+            17755
+        ],
+        [
+            17027,
+            16640,
+            19224
+        ],
+        [
+            4662,
+            19641,
+            19771
+        ],
+        [
+            4707,
+            19690,
+            19816
+        ],
+        [
+            8791,
+            18679,
+            22540
+        ]
+    ],
+    "appearance": {},
+    "geometry-templates": {}
+}

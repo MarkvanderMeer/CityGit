@@ -1,0 +1,555 @@
+{
+    "type": "CityJSONFeature",
+    "id": "NL.IMBAG.Pand.0756100000017248",
+    "CityObjects": {
+        "NL.IMBAG.Pand.0756100000017248-0": {
+            "type": "BuildingPart",
+            "geometry": [
+                {
+                    "type": "Solid",
+                    "lod": "1.2",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    4,
+                                    5,
+                                    6,
+                                    7,
+                                    8
+                                ]
+                            ],
+                            [
+                                [
+                                    9,
+                                    7,
+                                    6,
+                                    10
+                                ]
+                            ],
+                            [
+                                [
+                                    10,
+                                    6,
+                                    5,
+                                    11
+                                ]
+                            ],
+                            [
+                                [
+                                    12,
+                                    4,
+                                    8,
+                                    13
+                                ]
+                            ],
+                            [
+                                [
+                                    13,
+                                    8,
+                                    7,
+                                    9
+                                ]
+                            ],
+                            [
+                                [
+                                    11,
+                                    5,
+                                    4,
+                                    12
+                                ]
+                            ],
+                            [
+                                [
+                                    11,
+                                    12,
+                                    13,
+                                    9,
+                                    10
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "on_footprint_edge": true,
+                                "type": "WallSurface"
+                            },
+                            {
+                                "on_footprint_edge": false,
+                                "type": "WallSurface"
+                            },
+                            {
+                                "b3_h_dak_50p": 17.406410217285156,
+                                "b3_h_dak_70p": 17.652986526489258,
+                                "b3_h_dak_max": 18.273534774780273,
+                                "b3_h_dak_min": 16.715415954589844,
+                                "type": "RoofSurface"
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                3
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Solid",
+                    "lod": "1.3",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    4,
+                                    5,
+                                    6,
+                                    7,
+                                    8
+                                ]
+                            ],
+                            [
+                                [
+                                    9,
+                                    7,
+                                    6,
+                                    10
+                                ]
+                            ],
+                            [
+                                [
+                                    10,
+                                    6,
+                                    5,
+                                    11
+                                ]
+                            ],
+                            [
+                                [
+                                    12,
+                                    4,
+                                    8,
+                                    13
+                                ]
+                            ],
+                            [
+                                [
+                                    13,
+                                    8,
+                                    7,
+                                    9
+                                ]
+                            ],
+                            [
+                                [
+                                    11,
+                                    5,
+                                    4,
+                                    12
+                                ]
+                            ],
+                            [
+                                [
+                                    11,
+                                    12,
+                                    13,
+                                    9,
+                                    10
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "on_footprint_edge": true,
+                                "type": "WallSurface"
+                            },
+                            {
+                                "on_footprint_edge": false,
+                                "type": "WallSurface"
+                            },
+                            {
+                                "b3_h_dak_50p": 17.406410217285156,
+                                "b3_h_dak_70p": 17.652986526489258,
+                                "b3_h_dak_max": 18.273534774780273,
+                                "b3_h_dak_min": 16.715415954589844,
+                                "type": "RoofSurface"
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                3
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "Solid",
+                    "lod": "2.2",
+                    "boundaries": [
+                        [
+                            [
+                                [
+                                    5,
+                                    6,
+                                    7,
+                                    14,
+                                    8,
+                                    4,
+                                    15
+                                ]
+                            ],
+                            [
+                                [
+                                    16,
+                                    4,
+                                    8,
+                                    17
+                                ]
+                            ],
+                            [
+                                [
+                                    18,
+                                    14,
+                                    7,
+                                    19
+                                ]
+                            ],
+                            [
+                                [
+                                    17,
+                                    8,
+                                    14,
+                                    18
+                                ]
+                            ],
+                            [
+                                [
+                                    19,
+                                    7,
+                                    6,
+                                    20
+                                ]
+                            ],
+                            [
+                                [
+                                    21,
+                                    15,
+                                    4,
+                                    16
+                                ]
+                            ],
+                            [
+                                [
+                                    22,
+                                    5,
+                                    15,
+                                    21
+                                ]
+                            ],
+                            [
+                                [
+                                    20,
+                                    6,
+                                    5,
+                                    22
+                                ]
+                            ],
+                            [
+                                [
+                                    18,
+                                    21,
+                                    16,
+                                    17
+                                ]
+                            ],
+                            [
+                                [
+                                    21,
+                                    18,
+                                    19,
+                                    20,
+                                    22
+                                ]
+                            ]
+                        ]
+                    ],
+                    "semantics": {
+                        "surfaces": [
+                            {
+                                "type": "GroundSurface"
+                            },
+                            {
+                                "on_footprint_edge": true,
+                                "type": "WallSurface"
+                            },
+                            {
+                                "on_footprint_edge": false,
+                                "type": "WallSurface"
+                            },
+                            {
+                                "b3_azimut": 251.0642852783203,
+                                "b3_h_dak_50p": 17.63949203491211,
+                                "b3_h_dak_70p": 17.81149673461914,
+                                "b3_h_dak_max": 18.273534774780273,
+                                "b3_h_dak_min": 16.715415954589844,
+                                "b3_hellingshoek": 44.33168411254883,
+                                "type": "RoofSurface"
+                            },
+                            {
+                                "b3_azimut": 70.5018539428711,
+                                "b3_h_dak_50p": 17.345760345458984,
+                                "b3_h_dak_70p": 17.627159118652344,
+                                "b3_h_dak_max": 18.260040283203125,
+                                "b3_h_dak_min": 16.77002716064453,
+                                "b3_hellingshoek": 23.793542861938477,
+                                "type": "RoofSurface"
+                            }
+                        ],
+                        "values": [
+                            [
+                                0,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                1,
+                                3,
+                                4
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "parents": [
+                "NL.IMBAG.Pand.0756100000017248"
+            ]
+        },
+        "NL.IMBAG.Pand.0756100000017248": {
+            "type": "Building",
+            "geographicalExtent": [
+                194568.32088867188,
+                406023.8469992065,
+                14.336999893188477,
+                194572.6889916992,
+                406028.0432653808,
+                18.063888549804688
+            ],
+            "attributes": {
+                "b3_dak_type": "slanted",
+                "b3_extrusie": "standard",
+                "b3_h_dak_50p": 17.496000289916992,
+                "b3_h_dak_70p": 17.71500015258789,
+                "b3_h_dak_max": 18.051000595092773,
+                "b3_h_dak_min": 16.951000213623047,
+                "b3_h_maaiveld": 14.336999893188477,
+                "b3_h_nok": 18.054847717285156,
+                "b3_is_glas_dak": false,
+                "b3_kas_warenhuis": false,
+                "b3_mutatie_ahn3_ahn4": false,
+                "b3_mutatie_ahn4_ahn5": false,
+                "b3_n_nok": 1,
+                "b3_n_vlakken": 2,
+                "b3_nodata_fractie_ahn3": 0.06666667014360428,
+                "b3_nodata_fractie_ahn4": 0,
+                "b3_nodata_fractie_ahn5": 0.05000000074505806,
+                "b3_nodata_radius_ahn3": 0,
+                "b3_nodata_radius_ahn4": 0,
+                "b3_nodata_radius_ahn5": 0,
+                "b3_opp_buitenmuur": 40.08,
+                "b3_opp_dak_plat": 0,
+                "b3_opp_dak_schuin": 13.16,
+                "b3_opp_grond": 11.06,
+                "b3_opp_scheidingsmuur": 0,
+                "b3_puntdichtheid_ahn3": 11.142857551574709,
+                "b3_puntdichtheid_ahn4": 17,
+                "b3_puntdichtheid_ahn5": 16.421052932739258,
+                "b3_pw_bron": "ahn5",
+                "b3_pw_datum": 2024,
+                "b3_pw_onvoldoende": false,
+                "b3_pw_selectie_reden": "PREFERRED_AND_LATEST",
+                "b3_rmse_lod12": 0.3795956075191498,
+                "b3_rmse_lod13": 0.3795956075191498,
+                "b3_rmse_lod22": 0.04879271239042282,
+                "b3_t_run": 13,
+                "b3_val3dity_lod12": "[]",
+                "b3_val3dity_lod13": "[]",
+                "b3_val3dity_lod22": "[]",
+                "b3_volume_lod12": 37.13985061645508,
+                "b3_volume_lod13": 37.13985061645508,
+                "b3_volume_lod22": 34.81909942626953,
+                "begingeldigheid": "2001-06-05",
+                "documentdatum": "2001-06-05",
+                "documentnummer": "BV/2000-2009/822",
+                "fid": 14687841,
+                "geconstateerd": false,
+                "identificatie": "NL.IMBAG.Pand.0756100000017248",
+                "oorspronkelijkbouwjaar": 2001,
+                "status": "Pand in gebruik",
+                "tijdstipregistratie": "2010-05-12T15:31:31Z",
+                "tijdstipregistratielv": "2010-05-12T16:00:22Z",
+                "voorkomenidentificatie": 1
+            },
+            "geometry": [
+                {
+                    "type": "MultiSurface",
+                    "lod": "0",
+                    "boundaries": [
+                        [
+                            [
+                                0,
+                                1,
+                                2,
+                                3
+                            ]
+                        ]
+                    ]
+                }
+            ],
+            "children": [
+                "NL.IMBAG.Pand.0756100000017248-0"
+            ]
+        }
+    },
+    "vertices": [
+        [
+            21513,
+            32483,
+            0
+        ],
+        [
+            25119,
+            33450,
+            0
+        ],
+        [
+            24088,
+            37305,
+            0
+        ],
+        [
+            20481,
+            36341,
+            0
+        ],
+        [
+            20751,
+            35332,
+            14336
+        ],
+        [
+            23375,
+            35952,
+            14336
+        ],
+        [
+            24255,
+            36680,
+            14336
+        ],
+        [
+            25119,
+            33450,
+            14336
+        ],
+        [
+            21513,
+            32483,
+            14336
+        ],
+        [
+            25119,
+            33450,
+            17693
+        ],
+        [
+            24255,
+            36680,
+            17693
+        ],
+        [
+            23375,
+            35952,
+            17693
+        ],
+        [
+            20751,
+            35332,
+            17693
+        ],
+        [
+            21513,
+            32483,
+            17693
+        ],
+        [
+            22774,
+            32821,
+            14336
+        ],
+        [
+            21817,
+            35584,
+            14336
+        ],
+        [
+            20751,
+            35332,
+            16991
+        ],
+        [
+            21513,
+            32483,
+            16792
+        ],
+        [
+            22774,
+            32821,
+            18063
+        ],
+        [
+            25119,
+            33450,
+            16996
+        ],
+        [
+            24255,
+            36680,
+            16880
+        ],
+        [
+            21817,
+            35584,
+            18055
+        ],
+        [
+            23375,
+            35952,
+            17353
+        ]
+    ],
+    "header_hash": "1f83086481cef4c2aebc5c5353e3024b3911a8c3",
+    "hash": "f387b311bb1d3edc12010b3330be4606b85627a3"
+}

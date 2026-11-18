@@ -40,11 +40,12 @@ class CityJSON:
             raise TypeError("Not a JSON file!") from exp
         cityjson_data.close()
 
+        # Create new instance from __init__
         return cls(citymodel)
 
     @property
     def coordinates_transformer(self):
-        """Returns the coordinates trasnformer for the given object."""
+        """Returns the coordinates transformer for the given object."""
         return self._coords_transformer
 
     @property
@@ -94,6 +95,8 @@ class CityObjectDict:
 
     def __getitem__(self, key: str) -> 'CityObject':
         #TODO: This should dereference the vertices
+        # That would allow you to retrieve buildings with their actual vertex coordinates 
+        # rather than indices pointing to the global vertex array.
         return CityObject(self._data[key], key)
 
     def __setitem__(self, key: str, value: 'CityObject'):
@@ -240,6 +243,10 @@ class CoordinatesTransformer:
     def __init__(self, translate: list, scale: list):
         self._translate = translate
         self._scale = scale
+
+    @property
+    def data(self):
+        return self._translate, self._scale
 
     def decode_coords(self, coords: list):
         """Applies the transformation to the provided coordinates."""

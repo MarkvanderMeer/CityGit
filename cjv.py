@@ -131,6 +131,10 @@ def commit(context, new_version, ref, author, message, output):
             click.echo("No message provided. Doei!")
             quit()
     new_citymodel = CityJSON.from_file(new_version)
+
+    # Extract transform property for conversion with cjseq
+    transform = new_citymodel.coordinates_transformer.data
+
     def processor(citymodel):
         command = cjv_commands.CommitCommand(citymodel,
                                          new_citymodel,
@@ -139,6 +143,13 @@ def commit(context, new_version, ref, author, message, output):
                                          message)
         command.execute()
 
+        new_citymodel["transform"]["translate"] = transform[0]
+        new_citymodel["transform"]["scale"] = transform[1]
+
+        store = cjv_commands.StoreCommand(new_citymodel, new_version)
+        store.CityJSONtoHash()
+
+        # always overwrites file, even when no change
         click.echo("Saving {}...".format(output))
         citymodel.save(output)
     return processor
@@ -217,5 +228,17 @@ def merge(context, source_branch, dest_branch, author, output):
 
     return processor
 
+@cli.command()
+@click.argument('input_file')
+def store(input_file):
+    """Add a CityJSON file to the storage."""
+    def processor(citymodel: 'VersionedCityJSON'):
+        command = cjv_commands.StoreCommand(citymodel, input_file)
+        command.vCityJSONtoCityJSON()
+        #command.CityJSONtoHash()
+
+    return processor
+
+    
 if __name__ == "__main__":
     cli()

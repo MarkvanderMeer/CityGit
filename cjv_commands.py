@@ -2,16 +2,18 @@
 
 import datetime
 import json
+from pathlib import Path
 
 import networkx as nx
 # Code to have colors at the console output
 from colorama import Fore, Style, init
 
-import utils
-from graph import GraphHistoryLog, History, SimpleHistoryLog
+import helper_functions.utils
+from helper_functions.graph import GraphHistoryLog, History, SimpleHistoryLog
 from cityjson.versioning import VersionedCityJSON, SimpleVersionDiff, VersionedCityObject
 import cityjson.versioning as cjv
 import cityjson.citymodel as cjm
+import cityjson.storage as cjs
 
 from deepdiff import DeepDiff, Delta
 
@@ -87,7 +89,7 @@ class CheckoutCommand:
         new_model["vertices"] = cm.data["vertices"]
 
         print("Saving {0}...".format(output_file))
-        utils.save_cityjson(new_model, output_file)
+        helper_functions.utils.save_cityjson(new_model, output_file)
         print("Done!")
 
 class DiffCommand:
@@ -139,7 +141,7 @@ class RehashCommand:
         for obj_key, obj in cm.cityobjects.items():
             #TODO Later we'll have to do that first for the second-layer objects
             # and then for first ones
-            new_key = utils.get_hash_of_object(obj)
+            new_key = helper_functions.utils.get_hash_of_object(obj)
             print("{newkey} <- {oldkey}".format(newkey=new_key, oldkey=obj_key))
             keypairs[obj_key] = new_key
 
@@ -168,7 +170,7 @@ class RehashCommand:
                     new_parents.append(ver_keypairs[parent.name])
                 version.data["parents"] = new_parents
 
-            new_key = utils.get_hash_of_object(version.data)
+            new_key = helper_functions.utils.get_hash_of_object(version.data)
             print("{newkey} <- {oldkey}".format(newkey=new_key, oldkey=ver_key))
 
             new_versions[new_key] = version.data
@@ -215,14 +217,14 @@ class CommitCommand:
         vcm.data["vertices"] += new_citymodel["vertices"]
         for _, obj in new_citymodel["CityObjects"].items():
             for g in obj['geometry']:
-                utils.update_geom_indices_by_offset(g["boundaries"], offset)
+                helper_functions.utils.update_geom_indices_by_offset(g["boundaries"], offset)
 
         print("Removing duplicate vertices...")
-        newids, _ = utils.remove_duplicate_vertices(vcm, 3)
+        newids, _ = helper_functions.utils.remove_duplicate_vertices(vcm, 3)
 
         for obj_id, obj in new_citymodel["CityObjects"].items():
             for g in obj['geometry']:
-                utils.update_geom_indices_by_map(g["boundaries"], newids)
+                helper_functions.utils.update_geom_indices_by_map(g["boundaries"], newids)
 
         new_version = cjv.Version(vcm.versioning)
         new_version.author = self._author
@@ -235,6 +237,7 @@ class CommitCommand:
 
         if parent_versionid is not None:
             parent_version = vcm.versioning.get_version(parent_versionid)
+            # Change detection
             diff = cjv.SimpleVersionDiff(parent_version, new_version)
             result = diff.compute()
             if (len(result.added) == 0 and
@@ -271,9 +274,9 @@ class BranchCommand:
         """Executes the branch command."""
         vcm = self._citymodel
 
-        version = utils.find_version_from_ref(self._ref, vcm["versioning"])
+        version = helper_functions.utils.find_version_from_ref(self._ref, vcm["versioning"])
 
-        if utils.is_ref_branch(self._branch_name, vcm["versioning"]):
+        if helper_functions.utils.is_ref_branch(self._branch_name, vcm["versioning"]):
             print("Branch '{branch}' already exists! "
                   "Nothing to do.".format(branch=self._branch_name))
             return
@@ -301,7 +304,7 @@ class BranchDeleteCommand:
         """Executes the delete branch command."""
         vcm = self._citymodel
 
-        if not utils.is_ref_branch(self._branch_name, vcm["versioning"]):
+        if not helper_functions.utils.is_ref_branch(self._branch_name, vcm["versioning"]):
             print("Branch '{branch}' does not exist! "
                   "Nothing to do.".format(branch=self._branch_name))
             return
@@ -453,3 +456,56 @@ class MergeBranchesCommand:
 
         print("Saving to {0}...".format(self._output_file))
         vcm.save(self._output_file)
+
+
+class StoreCommand:
+    """Class that implements storing a CityJSON file to the local storage."""
+
+    def __init__(self, citymodel, input_file):
+        self._citymodel = citymodel
+        self._input_file = input_file
+
+    def CityJSONtoHash(self):
+        """Executes the store command."""
+
+        # extract path for dir settings
+        input_path = Path(self._input_file)
+
+        # use file string as input and output for cjseq
+        input = self._input_file
+        output = self._input_file + "l"
+
+        #Convert a CityJSON file to a CityJSONSequence file
+        cjseq = cjs.CityJSONToSequences(
+            str(input), 
+            str(output)
+        )
+        cjseq.convert()
+
+        print("Convert {0} to sequences, stored at: {1}".format(input, output))
+
+        # Make output dir for new features
+        output_dir = input_path.parent / "features"
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        # Splits all CityJSONSequence features into separate files
+        with open(output, "r", encoding="utf-8") as f:
+
+            for hash_id, compressed, name, feature in cjs.BlobObject.split(f):
+
+                with open(f"{output_dir}/{hash_id}.json", "wb") as feature_file:
+                    feature_file.write(compressed)
+                    
+                file_bytes = output_dir / (hash_id + ".json")
+
+                print(f"File size of{file_bytes} is {file_bytes.stat().st_size} bytes")
+
+
+                with open(f"{output_dir}/{name}.json", "w") as feature_file:
+                    feature_file.write(json.dumps(feature, indent=4))
+
+                file = output_dir / (name + ".json")
+                print(f"File size of{file} is {file.stat().st_size} bytes")
+
+                print(f"Reducing file size by {file_bytes.stat().st_size / file.stat().st_size}% \n")
+

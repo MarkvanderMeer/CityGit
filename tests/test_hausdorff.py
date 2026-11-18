@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.spatial import cKDTree
 import json
+import jsonpatch
 
 def world_vertices(cityjson):
     transform = cityjson.get("transform", {})
@@ -26,9 +27,11 @@ def json_reader(file_path):
         cityjson = json.load(file)
     return cityjson
 
-cube_a = json_reader("examples/cityjsontest/unit-cube.json")
-cube_b = json_reader("examples/cityjsontest/unit-cube_crasher.json")
+cube_a = json_reader("datasets/unit-cubes/unit-cube.json")
+cube_b = json_reader("datasets/unit-cubes/unit-cube_crasher.json")
 
 # Example:
 distance = vertex_hausdorff_distance(cube_a, cube_b)
 print(distance)
+
+patch = jsonpatch.make_patch(cube_a, cube_b)

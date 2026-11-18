@@ -1,0 +1,76 @@
+# A start date. Not required.
+start: 2026-11-01
+# An end date. Not required.
+
+# A list of tasks
+tasks:
+  - name: Research
+    subtasks:
+      - name: Versioning
+        start: 2026-11-10
+        end: 2026-12-04
+      - name: Git
+        start: 2026-12-03
+        end: 2026-12-20
+      - name: Encodings
+        start: 2027-01-25
+        end: 2027-02-10
+     
+  - name: Programming
+    subtasks:
+      - name: Change detection
+        start: 2026-11-09
+        end: 2026-12-20
+      - name: Storage System
+        id: beta-draft
+        start: 2026-11-30
+        end: 2027-01-20
+      - name: Format Neutral
+        start: 2027-01-25
+        end: 2027-02-15
+      - name: Testing
+        start: 2027-02-01
+        end: 2027-03-10
+      - name: Finalising product
+        start: 2027-03-15
+        end: 2027-04-05 
+  
+  - name: Writing
+    subtasks:
+      - name: Documenting
+        start: 2026-11-10
+        end: 2027-01-25
+      - name: Midterm report
+        start: 2027-01-01
+        end: 2027-01-25
+      - name: Final report
+        start: 2027-03-01
+        end: 2027-04-05
+      - name: Incorporate feedback
+        start: 2027-04-05
+        end: 2027-04-19
+
+        
+  - name: Presentation
+    subtasks:
+      - name: Midterm presentation
+        start: 2027-01-18
+        end: 2027-01-25
+      - name: Final presentation
+        start: 2027-04-12
+        end: 2027-04-19
+
+milestones:
+  - name: Kickoff
+    date: 2026-11-04
+    show-date: true
+    
+  - name: Midterm
+    date: 2027-01-25
+    show-date: true 
+    
+  - name: Greenlight
+    date: 2027-04-05
+
+  - name: Finalisation
+    date: 2027-04-19
