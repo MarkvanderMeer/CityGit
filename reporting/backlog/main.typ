@@ -40,3 +40,4 @@ I wrote down a MVP and a maximum or ideal scenario of what my result should look
 
 I realised that converting cityjson --> vcityjson --> cityjson is unnecessary. Hence, the store command does not have to be used and automatic storage takes place when commiting a file. When commiting a new file, the cityobject automatically get stored to storage. Either the hash works on uniques or the cityobject that change have to be used for storage. 
 
+I thouroughly read the CommitCommand, trying to understand the data flow and how a new commit is created and evaluated. I will use the change results for storage. 

@@ -228,30 +228,40 @@ def update_geom_indices_by_map(a, newids):
         else:
             a[i] = newids[each]
 
-def remove_duplicate_vertices(cm, precision):     
-    totalinput = len(cm["vertices"])        
-    h = {}
-    newids = [-1] * len(cm["vertices"])
-    newvertices = []
+def remove_duplicate_vertices(cm, precision):  
+    
+    total_input = len(cm["vertices"])        
+    vertices_list = {}
+    new_ids = [-1] * total_input #[0,1,0]
+    vertices = [] 
+
+    # Enumerate over x,y,z coordinates of all vertices
     for i, v in enumerate(cm["vertices"]):
-        s = "{{x:.{p}f}} {{y:.{p}f}} {{z:.{p}f}}".format(p=precision).format(x=v[0], y=v[1], z=v[2])
-        if s not in h:
-            newid = len(h)
-            newids[i] = newid
-            h[s] = newid
-            newvertices.append(s)
+        vertex = "{{x:.{p}f}} {{y:.{p}f}} {{z:.{p}f}}".format(p=precision).format(x=v[0], y=v[1], z=v[2])
+        
+        # Search for vertex if it exists in dictionary
+        if vertex not in vertices_list:
+            new_id = len(vertices_list)
+            new_ids[i] = new_id
+            vertices_list[vertex] = new_id
+            vertices.append(vertex)
         else:
-            newids[i] = h[s]
-    #-- replace the vertices, innit?
-    newv2 = []
-    for v in newvertices:
+            new_ids[i] = vertices_list[vertex]
+
+    
+    new_vertices_list = []
+    for v in vertices:
         if "transform" in cm:
             a = list(map(int, v.split()))
         else:
             a = list(map(float, v.split()))
-        newv2.append(a)
-    cm["vertices"] = newv2
-    return (newids, totalinput - len(cm["vertices"]))
+        new_vertices_list.append(a)
+
+    # Update vertices in citymodel 
+    cm["vertices"] = new_vertices_list
+
+    # Returns list of new_ids + number of duplicates.
+    return (new_ids, total_input - len(cm["vertices"]))
 
 def get_hash_of_object(object):
     # TODO This has to normalise the input (sort as well)

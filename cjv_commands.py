@@ -205,23 +205,33 @@ class CommitCommand:
 
     def execute(self):
         """Executes the commit command"""
+
+        # Take existing citymodel and to be committed citymodel
         vcm = self._vcitymodel
         new_citymodel = self._new_citymodel
 
+        # Update parent id to current citymodel, except if 'init commit'
         parent_versionid = None
         if len(vcm.versioning.versions) > 0:
             parent_versionid = vcm.versioning.resolve_ref(self._ref)
 
         print("Appending vertices...")
+        # Number of vertices in existing citymodel
         offset = len(vcm.data["vertices"])
+
+        # Add all new vertices to existing vertices
         vcm.data["vertices"] += new_citymodel["vertices"]
+
+        # Adds offset to boundary indexing.
         for _, obj in new_citymodel["CityObjects"].items():
             for g in obj['geometry']:
                 helper_functions.utils.update_geom_indices_by_offset(g["boundaries"], offset)
 
+        # Remove duplicate vertices from citymodel and have mapping to correct boundaries
         print("Removing duplicate vertices...")
         newids, _ = helper_functions.utils.remove_duplicate_vertices(vcm, 3)
 
+        # Update boundaries indices with new index
         for obj_id, obj in new_citymodel["CityObjects"].items():
             for g in obj['geometry']:
                 helper_functions.utils.update_geom_indices_by_map(g["boundaries"], newids)
@@ -231,31 +241,44 @@ class CommitCommand:
         new_version.date = datetime.datetime.now()
         new_version.message = self._message
 
+        # Add all objects to new version
         for obj_id, obj in new_citymodel.cityobjects.items():
             new_object = cjv.VersionedCityObject(cjm.CityObject(obj, obj_id))
             new_version.add_cityobject(new_object)
 
+        result = cjv.VersionsDiffResult()
+
         if parent_versionid is not None:
             parent_version = vcm.versioning.get_version(parent_versionid)
-            # Change detection
-            diff = cjv.SimpleVersionDiff(parent_version, new_version)
-            result = diff.compute()
-            if (len(result.added) == 0 and
-                    len(result.removed) == 0 and
-                    len(result.changed) == 0):
-                print("Nothing changed! Skipping this...")
-                return
+        else:
+            parent_version = cjv.Version(vcm.versioning)
 
-            result.print()
+        # Change detection between 2 versions
+        diff = cjv.SimpleVersionDiff(parent_version, new_version)
+        result = diff.compute()
+        if (len(result.added) == 0 and
+                len(result.removed) == 0 and
+                len(result.changed) == 0):
+            print("Nothing changed! Skipping this...")
+            return
+
+        result.print()
+
+        if parent_versionid is not None:
             new_version.add_parent(parent_version)
+
+        # Create new version
         new_version.name = new_version.hash()
         vcm.versioning.add_version(new_version)
 
+        # Deal with branches 
         if (vcm.versioning.is_branch(self._ref) or
                 len(vcm.versioning.versions) == 1):
             print("Updating {branch} to {id}".format(branch=self._ref,
                                                      id=new_version.name))
             vcm.versioning.set_branch(self._ref, new_version)
+
+        return result
 
 class BranchCommand:
     """Class that creates a branch at a given ref"""
@@ -457,7 +480,6 @@ class MergeBranchesCommand:
         print("Saving to {0}...".format(self._output_file))
         vcm.save(self._output_file)
 
-
 class StoreCommand:
     """Class that implements storing a CityJSON file to the local storage."""
 
@@ -470,6 +492,7 @@ class StoreCommand:
 
         # extract path for dir settings
         input_path = Path(self._input_file)
+        cm = self._citymodel
 
         # use file string as input and output for cjseq
         input = self._input_file
@@ -491,21 +514,24 @@ class StoreCommand:
         # Splits all CityJSONSequence features into separate files
         with open(output, "r", encoding="utf-8") as f:
 
+            # Iterate over hash name and compressions
             for hash_id, compressed, name, feature in cjs.BlobObject.split(f):
 
-                with open(f"{output_dir}/{hash_id}.json", "wb") as feature_file:
-                    feature_file.write(compressed)
-                    
-                file_bytes = output_dir / (hash_id + ".json")
+                if name in cm.cityobjects.items():
 
-                print(f"File size of{file_bytes} is {file_bytes.stat().st_size} bytes")
+                    with open(f"{output_dir}/{hash_id}.json", "wb") as feature_file:
+                        feature_file.write(compressed)
+                        
+                    #file_bytes = output_dir / (hash_id + ".json")
+
+                    #print(f"File size of{file_bytes} is {file_bytes.stat().st_size} bytes")
 
 
-                with open(f"{output_dir}/{name}.json", "w") as feature_file:
-                    feature_file.write(json.dumps(feature, indent=4))
+                    with open(f"{output_dir}/{name}.json", "w") as feature_file:
+                        feature_file.write(json.dumps(feature, indent=4))
 
-                file = output_dir / (name + ".json")
-                print(f"File size of{file} is {file.stat().st_size} bytes")
+                    #file = output_dir / (name + ".json")
+                    #print(f"File size of{file} is {file.stat().st_size} bytes")
 
-                print(f"Reducing file size by {file_bytes.stat().st_size / file.stat().st_size}% \n")
+                    #print(f"Reducing file size by {file_bytes.stat().st_size / file.stat().st_size}% \n")
 

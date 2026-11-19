@@ -400,8 +400,10 @@ class VersionsDiffResult:
                       .format(id=obj_name, hash=trim_string(obj.name)))
 
         if len(self.unchanged) > 0:
-            print("{color}\n{objcount} objects not changed.\n"
-                  .format(color=Style.RESET_ALL, objcount=len(self.unchanged)))
+            print("{color}".format(color=Fore.YELLOW), end='')
+            for obj_name, obj in self.unchanged.items():
+                print("\tunchanged: {id} ({hash})"
+                        .format(id=obj_name, hash=trim_string(obj.name)))
 
 def trim_string(text, width=15, suffix=".."):
     """Trims a string at the given width."""

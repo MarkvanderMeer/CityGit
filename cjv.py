@@ -135,19 +135,33 @@ def commit(context, new_version, ref, author, message, output):
     # Extract transform property for conversion with cjseq
     transform = new_citymodel.coordinates_transformer.data
 
+    # citymodle = vCityJSON
     def processor(citymodel):
         command = cjv_commands.CommitCommand(citymodel,
                                          new_citymodel,
                                          ref,
                                          author,
                                          message)
-        command.execute()
+        diff_results = command.execute()
 
         new_citymodel["transform"]["translate"] = transform[0]
         new_citymodel["transform"]["scale"] = transform[1]
 
-        store = cjv_commands.StoreCommand(new_citymodel, new_version)
-        store.CityJSONtoHash()
+        if len(diff_results.added) + len(diff_results.changed) > 0:
+            removed = diff_results.removed
+            unchanged = diff_results.unchanged
+
+            print(removed, unchanged)
+
+            removed_buildings = [*removed.keys(), *unchanged.keys()]
+
+            for building_id in removed_buildings:
+                # if building_id in new_citymodel:
+                if building_id in new_citymodel.cityobjects.items():
+                    new_citymodel.cityobjects.delete(building_id)
+
+            store = cjv_commands.StoreCommand(new_citymodel, new_version)
+            store.CityJSONtoHash()
 
         # always overwrites file, even when no change
         click.echo("Saving {}...".format(output))

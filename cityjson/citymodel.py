@@ -103,6 +103,12 @@ class CityObjectDict:
         #TODO: This should reference the vertices
         self._data[key] = value._data
 
+    def add (self,entry):
+        self._data.update(entry)
+
+    def delete(self, entry):
+        self._data.pop(entry)
+
     def __len__(self):
         return len(self._data)
 
