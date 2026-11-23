@@ -240,6 +240,11 @@ class Version(Hashable):
 
         return result
 
+    @property
+    def versioned_objects_mapping(self) -> Dict[str: 'VersionedCityObject']:
+        """Mapping of CityObject id's to versioned city object hashes"""
+        return self._json["objects"]
+
     def add_cityobject(self, value: 'VersionedCityObject'):
         """Adds the provided versioned city object to the version."""
         self._json["objects"][value.original_cityobject.name] = value.name

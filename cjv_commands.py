@@ -215,27 +215,6 @@ class CommitCommand:
         if len(vcm.versioning.versions) > 0:
             parent_versionid = vcm.versioning.resolve_ref(self._ref)
 
-        print("Appending vertices...")
-        # Number of vertices in existing citymodel
-        offset = len(vcm.data["vertices"])
-
-        # Add all new vertices to existing vertices
-        vcm.data["vertices"] += new_citymodel["vertices"]
-
-        # Adds offset to boundary indexing.
-        for _, obj in new_citymodel["CityObjects"].items():
-            for g in obj['geometry']:
-                helper_functions.utils.update_geom_indices_by_offset(g["boundaries"], offset)
-
-        # Remove duplicate vertices from citymodel and have mapping to correct boundaries
-        print("Removing duplicate vertices...")
-        newids, _ = helper_functions.utils.remove_duplicate_vertices(vcm, 3)
-
-        # Update boundaries indices with new index
-        for obj_id, obj in new_citymodel["CityObjects"].items():
-            for g in obj['geometry']:
-                helper_functions.utils.update_geom_indices_by_map(g["boundaries"], newids)
-
         new_version = cjv.Version(vcm.versioning)
         new_version.author = self._author
         new_version.date = datetime.datetime.now()
@@ -483,55 +462,69 @@ class MergeBranchesCommand:
 class StoreCommand:
     """Class that implements storing a CityJSON file to the local storage."""
 
-    def __init__(self, citymodel, input_file):
+    def __init__(self, citymodel, changes, input_file, mapping):
         self._citymodel = citymodel
+        self._changes = changes
         self._input_file = input_file
+        self._mapping = mapping
 
-    def CityJSONtoHash(self):
+    def execute(self):
         """Executes the store command."""
 
-        # extract path for dir settings
         input_path = Path(self._input_file)
         cm = self._citymodel
 
-        # use file string as input and output for cjseq
-        input = self._input_file
-        output = self._input_file + "l"
+        transform = cm.coordinates_transformer.data
+        cm["transform"]["translate"] = transform[0]
+        cm["transform"]["scale"] = transform[1]
+
+        removed = self._changes.removed
+        unchanged = self._changes.unchanged
+
+        removed_buildings = list(removed.keys()) + list(unchanged.keys())
+
+        for building_id in removed_buildings:
+            if building_id in cm.cityobjects.keys():
+                cm.cityobjects.delete(building_id)
+
+        # Dummy file, otherwise it overwrites my own test datasets.
+        test_path = "datasets/buildings/test.json"
+
+        cm.save(test_path)
 
         #Convert a CityJSON file to a CityJSONSequence file
         cjseq = cjs.CityJSONToSequences(
-            str(input), 
-            str(output)
+            input_file = test_path, 
+            output_file = test_path+ "l"
         )
         cjseq.convert()
-
-        print("Convert {0} to sequences, stored at: {1}".format(input, output))
 
         # Make output dir for new features
         output_dir = input_path.parent / "features"
         output_dir.mkdir(parents=True, exist_ok=True)
 
         # Splits all CityJSONSequence features into separate files
-        with open(output, "r", encoding="utf-8") as f:
+        with open(test_path + "l", "r", encoding="utf-8") as f:
 
             # Iterate over hash name and compressions
-            for hash_id, compressed, name, feature in cjs.BlobObject.split(f):
+            for compressed, name, feature in cjs.BlobObject.split(f):
 
-                if name in cm.cityobjects.items():
+                if name in cm.cityobjects.keys():
 
-                    with open(f"{output_dir}/{hash_id}.json", "wb") as feature_file:
+                    #TODO: Add check for similar hash
+
+                    hash_id_new = self._mapping[name]
+
+                    with open(f"{output_dir}/{hash_id_new}.jsonl", "wb") as feature_file:
                         feature_file.write(compressed)
-                        
-                    #file_bytes = output_dir / (hash_id + ".json")
 
-                    #print(f"File size of{file_bytes} is {file_bytes.stat().st_size} bytes")
-
-
-                    with open(f"{output_dir}/{name}.json", "w") as feature_file:
+                    with open(f"{output_dir}/{name}.jsonl", "w") as feature_file:
                         feature_file.write(json.dumps(feature, indent=4))
+
+                    #file_bytes = output_dir / (hash_id + ".json")
+                    #print(f"File size of{file_bytes} is {file_bytes.stat().st_size} bytes")
 
                     #file = output_dir / (name + ".json")
                     #print(f"File size of{file} is {file.stat().st_size} bytes")
-
                     #print(f"Reducing file size by {file_bytes.stat().st_size / file.stat().st_size}% \n")
 

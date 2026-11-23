@@ -67,6 +67,10 @@ class CityJSON:
         self._coords_transformer = CoordinatesTransformer(translate, scale)
         self._vertex_handler.update_vertex_list()
 
+    def print(self, indent=2):
+        """Pretty-print the CityJSON file to the terminal."""
+        print(json.dumps(self.data, indent=indent, ensure_ascii=False))
+
     def __repr__(self):
         return self._citymodel
 
@@ -108,6 +112,9 @@ class CityObjectDict:
 
     def delete(self, entry):
         self._data.pop(entry)
+
+    def keys(self):
+        return self._data.keys()
 
     def __len__(self):
         return len(self._data)

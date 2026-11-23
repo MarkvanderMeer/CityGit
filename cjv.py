@@ -132,40 +132,36 @@ def commit(context, new_version, ref, author, message, output):
             quit()
     new_citymodel = CityJSON.from_file(new_version)
 
-    # Extract transform property for conversion with cjseq
-    transform = new_citymodel.coordinates_transformer.data
-
-    # citymodle = vCityJSON
+    # citymodel = vCityJSON
     def processor(citymodel):
         command = cjv_commands.CommitCommand(citymodel,
                                          new_citymodel,
                                          ref,
                                          author,
                                          message)
+        # New version is committed, changes get return as result
         diff_results = command.execute()
 
-        new_citymodel["transform"]["translate"] = transform[0]
-        new_citymodel["transform"]["scale"] = transform[1]
+        # In case nothing changes
+        if diff_results is not None:
 
-        if len(diff_results.added) + len(diff_results.changed) > 0:
-            removed = diff_results.removed
-            unchanged = diff_results.unchanged
+            # Only add new or changed buildings to storage 
+            if len(diff_results.added) + len(diff_results.changed) > 0:
 
-            print(removed, unchanged)
+                version_hash = citymodel.versioning.resolve_ref(ref)
 
-            removed_buildings = [*removed.keys(), *unchanged.keys()]
-
-            for building_id in removed_buildings:
-                # if building_id in new_citymodel:
-                if building_id in new_citymodel.cityobjects.items():
-                    new_citymodel.cityobjects.delete(building_id)
-
-            store = cjv_commands.StoreCommand(new_citymodel, new_version)
-            store.CityJSONtoHash()
-
-        # always overwrites file, even when no change
-        click.echo("Saving {}...".format(output))
-        citymodel.save(output)
+                version = citymodel.versioning.get_version(version_hash)
+                
+                mapping = version.versioned_objects_mapping
+            
+                store = cjv_commands.StoreCommand(new_citymodel, 
+                                             diff_results, 
+                                             new_version,
+                                             mapping)
+                store.execute()
+                
+            click.echo("Saving {}...".format(output))
+            citymodel.save(output)
     return processor
 
 def print_branches(ctx, param, value):

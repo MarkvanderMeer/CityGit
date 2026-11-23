@@ -85,22 +85,18 @@ class BlobObject(Hashable):
         compressed = zlib.compress(encoded)
 
         # Yield header first
-        yield properties_hash, compressed, "properties", header
+        yield compressed, "properties", header
 
         for line in file:
             if not line.strip():
                 continue
 
             feature = json.loads(line)
+            feature["header_hash"] = properties_hash
 
             blob = cls(feature)
-
-            hash_id = blob.hash()
 
             encoded = json.dumps(blob.data).encode("utf-8")
             compressed = zlib.compress(encoded)
 
-            feature["header_hash"] = properties_hash
-            feature["hash"] = hash_id
-
-            yield hash_id, compressed, feature["id"], feature
+            yield compressed, feature["id"], feature
