@@ -2,10 +2,10 @@
 
 import datetime
 import json
+import copy
 from pathlib import Path
 
 import networkx as nx
-# Code to have colors at the console output
 from colorama import Fore, Style, init
 
 import helper_functions.utils
@@ -207,7 +207,9 @@ class CommitCommand:
         """Executes the commit command"""
 
         # Take existing citymodel and to be committed citymodel
-        vcm = self._vcitymodel
+        
+        # TODO: Change deepcopy when change detection algorithm is modified.
+        vcm = copy.deepcopy(self._vcitymodel)
         new_citymodel = self._new_citymodel
 
         # Update parent id to current citymodel, except if 'init commit'
@@ -215,7 +217,10 @@ class CommitCommand:
         if len(vcm.versioning.versions) > 0:
             parent_versionid = vcm.versioning.resolve_ref(self._ref)
 
+        # Create version object
         new_version = cjv.Version(vcm.versioning)
+
+        # Set version info
         new_version.author = self._author
         new_version.date = datetime.datetime.now()
         new_version.message = self._message
@@ -227,6 +232,7 @@ class CommitCommand:
 
         result = cjv.VersionsDiffResult()
 
+        # Get parent version object
         if parent_versionid is not None:
             parent_version = vcm.versioning.get_version(parent_versionid)
         else:
@@ -243,6 +249,25 @@ class CommitCommand:
 
         result.print()
 
+        vcm = self._vcitymodel
+
+        # Create version object
+        new_version = cjv.Version(vcm.versioning)
+
+        # Set version info
+        new_version.author = self._author
+        new_version.date = datetime.datetime.now()
+        new_version.message = self._message
+
+        # Empty vCityJSON
+        new_version.start_empty
+
+        # Add all objects to new version
+        for obj_id, obj in new_citymodel.cityobjects.items():
+            new_object = cjv.VersionedCityObject(cjm.CityObject(obj, obj_id))
+            new_version.add_cityobject(new_object)
+
+        # Give version a parent
         if parent_versionid is not None:
             new_version.add_parent(parent_version)
 
@@ -495,7 +520,7 @@ class StoreCommand:
         #Convert a CityJSON file to a CityJSONSequence file
         cjseq = cjs.CityJSONToSequences(
             input_file = test_path, 
-            output_file = test_path+ "l"
+            output_file = test_path + "l"
         )
         cjseq.convert()
 
@@ -511,15 +536,16 @@ class StoreCommand:
 
                 if name in cm.cityobjects.keys():
 
-                    #TODO: Add check for similar hash
-
                     hash_id_new = self._mapping[name]
 
-                    with open(f"{output_dir}/{hash_id_new}.jsonl", "wb") as feature_file:
-                        feature_file.write(compressed)
+                    # Prevent overwriting
+                    if not Path(f"{output_dir}/{hash_id_new}.jsonl").exists():
 
-                    with open(f"{output_dir}/{name}.jsonl", "w") as feature_file:
-                        feature_file.write(json.dumps(feature, indent=4))
+                        with open(f"{output_dir}/{hash_id_new}.jsonl", "wb") as feature_file:
+                            feature_file.write(compressed)
+
+                        with open(f"{output_dir}/{name}.jsonl", "w") as feature_file:
+                            feature_file.write(json.dumps(feature, indent=4))
 
                     #file_bytes = output_dir / (hash_id + ".json")
                     #print(f"File size of{file_bytes} is {file_bytes.stat().st_size} bytes")
@@ -528,3 +554,13 @@ class StoreCommand:
                     #print(f"File size of{file} is {file.stat().st_size} bytes")
                     #print(f"Reducing file size by {file_bytes.stat().st_size / file.stat().st_size}% \n")
 
+class RetrieveCommand:
+    """Class that implements retrieving versioned cityobjects from local storage."""
+
+    def __init__(self, intput_file):
+        self._input_file = input_file
+
+
+    def execute():
+
+        return 

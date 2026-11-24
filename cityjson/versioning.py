@@ -44,8 +44,11 @@ class VersionedCityJSON(CityJSON):
     """Class that represents a versioned CityJSON file."""
 
     def __init__(self, data: dict = None):
+
+        # Init commit creates an empty vcityjson
         if data is None:
             self._citymodel = empty_vcityjson.copy()
+        # Calls parent class CityJSON and retrieve its init data
         else:
             super(VersionedCityJSON, self).__init__(data)
 
@@ -53,6 +56,9 @@ class VersionedCityJSON(CityJSON):
     def versioning(self):
         """Returns the versioning aspect of CityJSON"""
         return Versioning(self, self._citymodel["versioning"])
+
+    def __repr__(self):
+        return str(self._citymodel)
 
 class Versioning:
     """Class that represents the versioning aspect of a CityJSON file."""
@@ -244,6 +250,11 @@ class Version(Hashable):
     def versioned_objects_mapping(self) -> Dict[str: 'VersionedCityObject']:
         """Mapping of CityObject id's to versioned city object hashes"""
         return self._json["objects"]
+
+    @property
+    def start_empty(self):
+        """Remove all cityobject from vCityJSON"""
+        self._versioning.citymodel["CityObjects"].clear()
 
     def add_cityobject(self, value: 'VersionedCityObject'):
         """Adds the provided versioned city object to the version."""

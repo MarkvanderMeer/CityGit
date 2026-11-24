@@ -139,10 +139,11 @@ def commit(context, new_version, ref, author, message, output):
                                          ref,
                                          author,
                                          message)
+        
         # New version is committed, changes get return as result
         diff_results = command.execute()
 
-        # In case nothing changes
+        # Only save / store when change occurs.
         if diff_results is not None:
 
             # Only add new or changed buildings to storage 
@@ -159,7 +160,8 @@ def commit(context, new_version, ref, author, message, output):
                                              new_version,
                                              mapping)
                 store.execute()
-                
+
+            # Overwriting to ouput file.
             click.echo("Saving {}...".format(output))
             citymodel.save(output)
     return processor
@@ -235,17 +237,6 @@ def merge(context, source_branch, dest_branch, author, output):
         command.execute()
 
         citymodel.save(output)
-
-    return processor
-
-@cli.command()
-@click.argument('input_file')
-def store(input_file):
-    """Add a CityJSON file to the storage."""
-    def processor(citymodel: 'VersionedCityJSON'):
-        command = cjv_commands.StoreCommand(citymodel, input_file)
-        command.vCityJSONtoCityJSON()
-        #command.CityJSONtoHash()
 
     return processor
 
